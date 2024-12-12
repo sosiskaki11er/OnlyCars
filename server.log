@@ -1,0 +1,2835 @@
+2024-12-04 19:03:32,540 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:03:32,540 INFO:9170 class names loaded.
+2024-12-04 19:03:32,932 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:03:33,115 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:03:33,222 INFO:Model state dict loaded.
+2024-12-04 19:03:33,313 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:03:33,349 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:03:33,352 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:03:33,352 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:03:33,358 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:03:33,358 INFO:Server started and waiting for connections...
+2024-12-04 19:03:33,363 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:03:39,259 DEBUG:= connection is CONNECTING
+2024-12-04 19:03:39,282 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:03:39,282 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:03:39,282 DEBUG:< Accept: */*
+2024-12-04 19:03:39,282 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:03:39,283 DEBUG:< Upgrade: websocket
+2024-12-04 19:03:39,283 DEBUG:< Connection: Upgrade
+2024-12-04 19:03:39,283 DEBUG:< Sec-WebSocket-Key: LjXrEpgGFq6UhyseDHXBhQ==
+2024-12-04 19:03:39,283 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:03:39,283 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:03:39,284 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:03:39,284 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:03:39,284 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:03:39,284 DEBUG:> Date: Wed, 04 Dec 2024 14:03:39 GMT
+2024-12-04 19:03:39,284 DEBUG:> Upgrade: websocket
+2024-12-04 19:03:39,284 DEBUG:> Connection: Upgrade
+2024-12-04 19:03:39,284 DEBUG:> Sec-WebSocket-Accept: Sxb6hxzs2HLe9ahtLGn5Ed9VoP0=
+2024-12-04 19:03:39,284 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:03:39,284 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:03:39,285 DEBUG:= connection is OPEN
+2024-12-04 19:03:39,285 INFO:connection open
+2024-12-04 19:03:39,285 INFO:Connection received from client.
+2024-12-04 19:03:47,602 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:03:47,602 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:03:47,602 INFO:Preprocessing image...
+2024-12-04 19:03:47,602 DEBUG:Opening image...
+2024-12-04 19:03:47,602 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:03:47,602 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:03:47,602 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:03:47,602 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:03:47,602 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:03:47,617 DEBUG:Image opened successfully.
+2024-12-04 19:03:47,619 DEBUG:Image transformed into tensor.
+2024-12-04 19:03:47,620 INFO:Image preprocessed successfully.
+2024-12-04 19:03:47,620 INFO:Running model inference...
+2024-12-04 19:03:47,893 INFO:Model inference completed.
+2024-12-04 19:03:47,893 INFO:Predicted class: toyota_tundra_2003 with confidence 0.0002832049794960767
+2024-12-04 19:03:47,893 DEBUG:> TEXT '{"class": "toyota_tundra_2003", "confidence": 0.0002832049794960767}' [68 bytes]
+2024-12-04 19:03:47,893 INFO:Response sent to client.
+2024-12-04 19:03:47,893 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:03:47,893 DEBUG:= connection is CLOSING
+2024-12-04 19:03:57,894 DEBUG:< EOF
+2024-12-04 19:03:57,894 DEBUG:> EOF
+2024-12-04 19:03:57,894 DEBUG:< EOF
+2024-12-04 19:03:57,894 DEBUG:= connection is CLOSED
+2024-12-04 19:05:24,117 DEBUG:= connection is CONNECTING
+2024-12-04 19:05:24,120 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:05:24,120 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:05:24,120 DEBUG:< Accept: */*
+2024-12-04 19:05:24,120 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:05:24,120 DEBUG:< Upgrade: websocket
+2024-12-04 19:05:24,120 DEBUG:< Connection: Upgrade
+2024-12-04 19:05:24,120 DEBUG:< Sec-WebSocket-Key: sa/U37+OJJ6r8WiIZAqzbA==
+2024-12-04 19:05:24,120 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:05:24,120 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:05:24,120 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:05:24,120 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:05:24,120 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:05:24,120 DEBUG:> Date: Wed, 04 Dec 2024 14:05:24 GMT
+2024-12-04 19:05:24,120 DEBUG:> Upgrade: websocket
+2024-12-04 19:05:24,120 DEBUG:> Connection: Upgrade
+2024-12-04 19:05:24,120 DEBUG:> Sec-WebSocket-Accept: t0ATpA/3/QAbQuAZRzgyZSAzIFg=
+2024-12-04 19:05:24,120 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:05:24,120 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:05:24,120 DEBUG:= connection is OPEN
+2024-12-04 19:05:24,120 INFO:connection open
+2024-12-04 19:05:24,120 INFO:Connection received from client.
+2024-12-04 19:05:28,078 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:05:28,078 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:05:28,078 INFO:Preprocessing image...
+2024-12-04 19:05:28,078 DEBUG:Opening image...
+2024-12-04 19:05:28,078 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:05:28,078 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:05:28,078 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:05:28,078 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:05:28,078 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:05:28,078 DEBUG:Image opened successfully.
+2024-12-04 19:05:28,078 DEBUG:Image transformed into tensor.
+2024-12-04 19:05:28,078 INFO:Image preprocessed successfully.
+2024-12-04 19:05:28,078 INFO:Running model inference...
+2024-12-04 19:05:28,089 INFO:Model inference completed.
+2024-12-04 19:05:28,133 INFO:Predicted class: toyota_tundra_2003 with confidence 0.0002832049794960767
+2024-12-04 19:05:28,133 DEBUG:> TEXT '{"class": "toyota_tundra_2003", "confidence": 0.0002832049794960767}' [68 bytes]
+2024-12-04 19:05:28,133 INFO:Response sent to client.
+2024-12-04 19:05:28,133 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:05:28,133 DEBUG:= connection is CLOSING
+2024-12-04 19:05:28,201 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:05:28,201 DEBUG:> EOF
+2024-12-04 19:05:28,201 DEBUG:x half-closing TCP connection
+2024-12-04 19:05:28,201 DEBUG:< EOF
+2024-12-04 19:05:28,201 DEBUG:= connection is CLOSED
+2024-12-04 19:13:37,628 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:13:37,637 INFO:9170 class names loaded.
+2024-12-04 19:13:38,031 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:13:38,216 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:13:38,325 INFO:Model state dict loaded.
+2024-12-04 19:13:38,412 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:13:38,452 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:13:38,452 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:13:38,452 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:13:38,462 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:13:38,462 INFO:Server started and waiting for connections...
+2024-12-04 19:13:38,462 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:14:27,829 DEBUG:= connection is CONNECTING
+2024-12-04 19:14:27,839 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:14:27,839 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:14:27,839 DEBUG:< Accept: */*
+2024-12-04 19:14:27,843 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:14:27,843 DEBUG:< Upgrade: websocket
+2024-12-04 19:14:27,843 DEBUG:< Connection: Upgrade
+2024-12-04 19:14:27,843 DEBUG:< Sec-WebSocket-Key: EmH6dnE44ZKSszXuVnmVsQ==
+2024-12-04 19:14:27,843 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:14:27,844 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:14:27,844 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:14:27,844 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:14:27,844 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:14:27,844 DEBUG:> Date: Wed, 04 Dec 2024 14:14:27 GMT
+2024-12-04 19:14:27,844 DEBUG:> Upgrade: websocket
+2024-12-04 19:14:27,844 DEBUG:> Connection: Upgrade
+2024-12-04 19:14:27,844 DEBUG:> Sec-WebSocket-Accept: EASGsZHKmeIB4aGwUl7RFp78tcM=
+2024-12-04 19:14:27,844 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:14:27,844 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:14:27,845 DEBUG:= connection is OPEN
+2024-12-04 19:14:27,845 INFO:connection open
+2024-12-04 19:14:27,845 INFO:Connection received from client.
+2024-12-04 19:14:33,156 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:14:33,156 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:14:33,157 INFO:Preprocessing image...
+2024-12-04 19:14:33,157 DEBUG:Opening image...
+2024-12-04 19:14:33,163 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:14:33,163 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:14:33,164 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:14:33,164 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:14:33,164 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:14:33,165 DEBUG:Image opened successfully.
+2024-12-04 19:14:33,167 DEBUG:Image transformed into tensor.
+2024-12-04 19:14:33,168 INFO:Image preprocessed successfully.
+2024-12-04 19:14:33,168 INFO:Running model inference...
+2024-12-04 19:14:33,169 ERROR:Error in server: cannot access local variable 'model' where it is not associated with a value
+2024-12-04 19:14:33,169 ERROR:Traceback: Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 134, in handle_client
+    None, model_forward, model, input_tensor)
+                         ^^^^^
+UnboundLocalError: cannot access local variable 'model' where it is not associated with a value
+
+2024-12-04 19:14:33,169 DEBUG:> TEXT '{"error": "Server error: cannot access local va...sociated with a value"}' [103 bytes]
+2024-12-04 19:14:33,169 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:14:33,169 DEBUG:= connection is CLOSING
+2024-12-04 19:14:33,234 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:14:33,234 DEBUG:> EOF
+2024-12-04 19:14:33,234 DEBUG:x half-closing TCP connection
+2024-12-04 19:14:33,234 DEBUG:< EOF
+2024-12-04 19:14:33,234 DEBUG:= connection is CLOSED
+2024-12-04 19:16:33,259 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:16:33,259 INFO:9170 class names loaded.
+2024-12-04 19:16:33,659 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:16:33,829 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:16:33,945 INFO:Model state dict loaded.
+2024-12-04 19:16:34,037 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:16:34,076 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:16:34,077 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:16:34,077 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:16:34,087 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:16:34,087 INFO:Server started and waiting for connections...
+2024-12-04 19:16:34,087 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:16:54,262 DEBUG:= connection is CONNECTING
+2024-12-04 19:16:54,279 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:16:54,279 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:16:54,279 DEBUG:< Accept: */*
+2024-12-04 19:16:54,279 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:16:54,279 DEBUG:< Upgrade: websocket
+2024-12-04 19:16:54,286 DEBUG:< Connection: Upgrade
+2024-12-04 19:16:54,286 DEBUG:< Sec-WebSocket-Key: Ucyi0lONq76Haz1y5RB82g==
+2024-12-04 19:16:54,286 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:16:54,286 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:16:54,286 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:16:54,287 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:16:54,287 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:16:54,287 DEBUG:> Date: Wed, 04 Dec 2024 14:16:54 GMT
+2024-12-04 19:16:54,287 DEBUG:> Upgrade: websocket
+2024-12-04 19:16:54,287 DEBUG:> Connection: Upgrade
+2024-12-04 19:16:54,287 DEBUG:> Sec-WebSocket-Accept: z+YNhjNxquWS5oc0AHVTIzW4tUM=
+2024-12-04 19:16:54,287 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:16:54,287 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:16:54,287 DEBUG:= connection is OPEN
+2024-12-04 19:16:54,287 INFO:connection open
+2024-12-04 19:16:54,287 INFO:Connection received from client.
+2024-12-04 19:16:57,150 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:16:57,150 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:16:57,150 INFO:Preprocessing image...
+2024-12-04 19:16:57,150 DEBUG:Opening image...
+2024-12-04 19:16:57,150 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:16:57,150 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:16:57,150 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:16:57,150 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:16:57,160 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:16:57,160 DEBUG:Image opened successfully.
+2024-12-04 19:16:57,163 DEBUG:Image transformed into tensor.
+2024-12-04 19:16:57,164 INFO:Image preprocessed successfully.
+2024-12-04 19:16:57,164 INFO:Running model inference...
+2024-12-04 19:16:57,411 INFO:Model inference completed.
+2024-12-04 19:16:57,411 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:16:57,411 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:16:57,411 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:16:57,411 INFO:Response sent to client.
+2024-12-04 19:16:57,411 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:16:57,411 DEBUG:= connection is CLOSING
+2024-12-04 19:16:57,506 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:16:57,506 DEBUG:> EOF
+2024-12-04 19:16:57,507 DEBUG:x half-closing TCP connection
+2024-12-04 19:16:57,517 DEBUG:< EOF
+2024-12-04 19:16:57,517 DEBUG:= connection is CLOSED
+2024-12-04 19:17:50,212 DEBUG:= connection is CONNECTING
+2024-12-04 19:17:50,244 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:17:50,244 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:17:50,244 DEBUG:< Accept: */*
+2024-12-04 19:17:50,244 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:17:50,244 DEBUG:< Upgrade: websocket
+2024-12-04 19:17:50,244 DEBUG:< Connection: Upgrade
+2024-12-04 19:17:50,244 DEBUG:< Sec-WebSocket-Key: ubbh0XgMZfc98xG3HPijHA==
+2024-12-04 19:17:50,251 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:17:50,251 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:17:50,251 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:17:50,251 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:17:50,251 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:17:50,251 DEBUG:> Date: Wed, 04 Dec 2024 14:17:50 GMT
+2024-12-04 19:17:50,251 DEBUG:> Upgrade: websocket
+2024-12-04 19:17:50,251 DEBUG:> Connection: Upgrade
+2024-12-04 19:17:50,251 DEBUG:> Sec-WebSocket-Accept: F4SUyMPUo29iZ1YDbqMcU/S5+rc=
+2024-12-04 19:17:50,251 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:17:50,251 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:17:50,251 DEBUG:= connection is OPEN
+2024-12-04 19:17:50,251 INFO:connection open
+2024-12-04 19:17:50,251 INFO:Connection received from client.
+2024-12-04 19:17:52,078 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:17:52,078 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:17:52,078 INFO:Preprocessing image...
+2024-12-04 19:17:52,078 DEBUG:Opening image...
+2024-12-04 19:17:52,078 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:17:52,078 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:17:52,078 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:17:52,078 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:17:52,078 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:17:52,078 DEBUG:Image opened successfully.
+2024-12-04 19:17:52,078 DEBUG:Image transformed into tensor.
+2024-12-04 19:17:52,078 INFO:Image preprocessed successfully.
+2024-12-04 19:17:52,078 INFO:Running model inference...
+2024-12-04 19:17:52,096 INFO:Model inference completed.
+2024-12-04 19:17:52,126 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:17:52,126 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:17:52,126 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:17:52,126 INFO:Response sent to client.
+2024-12-04 19:17:52,126 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:17:52,126 DEBUG:= connection is CLOSING
+2024-12-04 19:17:52,251 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:17:52,251 DEBUG:> EOF
+2024-12-04 19:17:52,251 DEBUG:x half-closing TCP connection
+2024-12-04 19:17:52,251 DEBUG:< EOF
+2024-12-04 19:17:52,251 DEBUG:= connection is CLOSED
+2024-12-04 19:18:12,417 DEBUG:= connection is CONNECTING
+2024-12-04 19:18:12,449 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:18:12,449 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:18:12,449 DEBUG:< Accept: */*
+2024-12-04 19:18:12,449 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:18:12,449 DEBUG:< Upgrade: websocket
+2024-12-04 19:18:12,449 DEBUG:< Connection: Upgrade
+2024-12-04 19:18:12,449 DEBUG:< Sec-WebSocket-Key: j+c3+vAbFIxlerwqyYsuFA==
+2024-12-04 19:18:12,449 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:18:12,449 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:18:12,449 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:18:12,449 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:18:12,449 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:18:12,449 DEBUG:> Date: Wed, 04 Dec 2024 14:18:12 GMT
+2024-12-04 19:18:12,449 DEBUG:> Upgrade: websocket
+2024-12-04 19:18:12,449 DEBUG:> Connection: Upgrade
+2024-12-04 19:18:12,449 DEBUG:> Sec-WebSocket-Accept: 3+SvD5rFBvXDBugks5Rcaz9xTMk=
+2024-12-04 19:18:12,449 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:18:12,449 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:18:12,449 DEBUG:= connection is OPEN
+2024-12-04 19:18:12,449 INFO:connection open
+2024-12-04 19:18:12,449 INFO:Connection received from client.
+2024-12-04 19:18:13,863 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:18:13,863 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:18:13,863 INFO:Preprocessing image...
+2024-12-04 19:18:13,863 DEBUG:Opening image...
+2024-12-04 19:18:13,863 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:18:13,879 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:18:13,879 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:18:13,879 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:18:13,879 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:18:13,880 DEBUG:Image opened successfully.
+2024-12-04 19:18:13,880 DEBUG:Image transformed into tensor.
+2024-12-04 19:18:13,880 INFO:Image preprocessed successfully.
+2024-12-04 19:18:13,880 INFO:Running model inference...
+2024-12-04 19:18:13,895 INFO:Model inference completed.
+2024-12-04 19:18:13,926 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:18:13,926 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:18:13,926 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:18:13,926 INFO:Response sent to client.
+2024-12-04 19:18:13,926 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:18:13,926 DEBUG:= connection is CLOSING
+2024-12-04 19:18:13,942 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:18:13,942 DEBUG:> EOF
+2024-12-04 19:18:13,942 DEBUG:x half-closing TCP connection
+2024-12-04 19:18:13,942 DEBUG:< EOF
+2024-12-04 19:18:13,942 DEBUG:= connection is CLOSED
+2024-12-04 19:18:45,064 DEBUG:= connection is CONNECTING
+2024-12-04 19:18:45,077 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:18:45,077 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:18:45,077 DEBUG:< Accept: */*
+2024-12-04 19:18:45,077 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:18:45,077 DEBUG:< Upgrade: websocket
+2024-12-04 19:18:45,077 DEBUG:< Connection: Upgrade
+2024-12-04 19:18:45,077 DEBUG:< Sec-WebSocket-Key: CeYm2BQhG4IncSsUr4Om1g==
+2024-12-04 19:18:45,079 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:18:45,079 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:18:45,079 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:18:45,079 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:18:45,080 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:18:45,080 DEBUG:> Date: Wed, 04 Dec 2024 14:18:45 GMT
+2024-12-04 19:18:45,080 DEBUG:> Upgrade: websocket
+2024-12-04 19:18:45,080 DEBUG:> Connection: Upgrade
+2024-12-04 19:18:45,080 DEBUG:> Sec-WebSocket-Accept: +1bnd/+JpxD4Q2Zb7Mn4x62GdEA=
+2024-12-04 19:18:45,080 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:18:45,080 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:18:45,080 DEBUG:= connection is OPEN
+2024-12-04 19:18:45,080 INFO:connection open
+2024-12-04 19:18:45,080 INFO:Connection received from client.
+2024-12-04 19:18:47,258 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:18:47,258 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:18:47,258 INFO:Preprocessing image...
+2024-12-04 19:18:47,260 DEBUG:Opening image...
+2024-12-04 19:18:47,260 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:18:47,260 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:18:47,261 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:18:47,261 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:18:47,261 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:18:47,261 DEBUG:Image opened successfully.
+2024-12-04 19:18:47,262 DEBUG:Image transformed into tensor.
+2024-12-04 19:18:47,262 INFO:Image preprocessed successfully.
+2024-12-04 19:18:47,262 INFO:Running model inference...
+2024-12-04 19:18:47,272 INFO:Model inference completed.
+2024-12-04 19:18:47,309 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:18:47,309 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:18:47,309 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:18:47,309 INFO:Response sent to client.
+2024-12-04 19:18:47,309 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:18:47,310 DEBUG:= connection is CLOSING
+2024-12-04 19:18:47,366 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:18:47,366 DEBUG:> EOF
+2024-12-04 19:18:47,366 DEBUG:x half-closing TCP connection
+2024-12-04 19:18:47,366 DEBUG:< EOF
+2024-12-04 19:18:47,366 DEBUG:= connection is CLOSED
+2024-12-04 19:19:03,625 DEBUG:= connection is CONNECTING
+2024-12-04 19:19:03,647 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:19:03,647 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:19:03,647 DEBUG:< Accept: */*
+2024-12-04 19:19:03,649 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:19:03,649 DEBUG:< Upgrade: websocket
+2024-12-04 19:19:03,649 DEBUG:< Connection: Upgrade
+2024-12-04 19:19:03,649 DEBUG:< Sec-WebSocket-Key: DTsNRyPT/HbL04nDvJJWXQ==
+2024-12-04 19:19:03,649 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:19:03,649 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:19:03,649 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:19:03,649 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:19:03,649 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:19:03,649 DEBUG:> Date: Wed, 04 Dec 2024 14:19:03 GMT
+2024-12-04 19:19:03,650 DEBUG:> Upgrade: websocket
+2024-12-04 19:19:03,650 DEBUG:> Connection: Upgrade
+2024-12-04 19:19:03,650 DEBUG:> Sec-WebSocket-Accept: WpTJzX6Dgk+ZoawHWtdzMu5FxWY=
+2024-12-04 19:19:03,650 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:19:03,650 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:19:03,650 DEBUG:= connection is OPEN
+2024-12-04 19:19:03,650 INFO:connection open
+2024-12-04 19:19:03,650 INFO:Connection received from client.
+2024-12-04 19:19:05,264 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:19:05,265 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:19:05,265 INFO:Preprocessing image...
+2024-12-04 19:19:05,265 DEBUG:Opening image...
+2024-12-04 19:19:05,265 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:19:05,265 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:19:05,265 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:19:05,265 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:19:05,266 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:19:05,266 DEBUG:Image opened successfully.
+2024-12-04 19:19:05,268 DEBUG:Image transformed into tensor.
+2024-12-04 19:19:05,269 INFO:Image preprocessed successfully.
+2024-12-04 19:19:05,269 INFO:Running model inference...
+2024-12-04 19:19:05,280 INFO:Model inference completed.
+2024-12-04 19:19:05,314 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:19:05,314 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:19:05,314 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:19:05,314 INFO:Response sent to client.
+2024-12-04 19:19:05,315 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:19:05,315 DEBUG:= connection is CLOSING
+2024-12-04 19:19:05,336 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:19:05,336 DEBUG:> EOF
+2024-12-04 19:19:05,336 DEBUG:x half-closing TCP connection
+2024-12-04 19:19:05,336 DEBUG:< EOF
+2024-12-04 19:19:05,336 DEBUG:= connection is CLOSED
+2024-12-04 19:19:54,835 DEBUG:= connection is CONNECTING
+2024-12-04 19:19:54,844 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:19:54,844 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:19:54,844 DEBUG:< Accept: */*
+2024-12-04 19:19:54,846 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:19:54,847 DEBUG:< Upgrade: websocket
+2024-12-04 19:19:54,847 DEBUG:< Connection: Upgrade
+2024-12-04 19:19:54,847 DEBUG:< Sec-WebSocket-Key: jnZZB1T9lAp3lpPjVdLBTg==
+2024-12-04 19:19:54,847 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:19:54,847 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:19:54,847 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:19:54,847 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:19:54,848 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:19:54,848 DEBUG:> Date: Wed, 04 Dec 2024 14:19:54 GMT
+2024-12-04 19:19:54,848 DEBUG:> Upgrade: websocket
+2024-12-04 19:19:54,848 DEBUG:> Connection: Upgrade
+2024-12-04 19:19:54,848 DEBUG:> Sec-WebSocket-Accept: HOc3HvS6Hbr8e8k/+Y39rTzVbA8=
+2024-12-04 19:19:54,848 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:19:54,848 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:19:54,848 DEBUG:= connection is OPEN
+2024-12-04 19:19:54,848 INFO:connection open
+2024-12-04 19:19:54,848 INFO:Connection received from client.
+2024-12-04 19:19:57,861 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:19:57,861 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:19:57,861 INFO:Preprocessing image...
+2024-12-04 19:19:57,861 DEBUG:Opening image...
+2024-12-04 19:19:57,861 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:19:57,863 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:19:57,863 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:19:57,863 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:19:57,863 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:19:57,863 DEBUG:Image opened successfully.
+2024-12-04 19:19:57,863 DEBUG:Image transformed into tensor.
+2024-12-04 19:19:57,863 INFO:Image preprocessed successfully.
+2024-12-04 19:19:57,863 INFO:Running model inference...
+2024-12-04 19:19:57,880 INFO:Model inference completed.
+2024-12-04 19:19:57,911 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:19:57,911 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:19:57,912 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:19:57,912 INFO:Response sent to client.
+2024-12-04 19:19:57,912 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:19:57,912 DEBUG:= connection is CLOSING
+2024-12-04 19:19:57,963 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:19:57,963 DEBUG:> EOF
+2024-12-04 19:19:57,963 DEBUG:x half-closing TCP connection
+2024-12-04 19:19:57,992 DEBUG:< EOF
+2024-12-04 19:19:57,993 DEBUG:= connection is CLOSED
+2024-12-04 19:20:41,463 DEBUG:= connection is CONNECTING
+2024-12-04 19:20:41,463 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:20:41,463 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:20:41,463 DEBUG:< Accept: */*
+2024-12-04 19:20:41,463 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:20:41,463 DEBUG:< Upgrade: websocket
+2024-12-04 19:20:41,463 DEBUG:< Connection: Upgrade
+2024-12-04 19:20:41,463 DEBUG:< Sec-WebSocket-Key: afictgVQ2fFa94dpQoTTag==
+2024-12-04 19:20:41,464 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:20:41,464 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:20:41,464 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:20:41,464 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:20:41,464 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:20:41,464 DEBUG:> Date: Wed, 04 Dec 2024 14:20:41 GMT
+2024-12-04 19:20:41,464 DEBUG:> Upgrade: websocket
+2024-12-04 19:20:41,465 DEBUG:> Connection: Upgrade
+2024-12-04 19:20:41,465 DEBUG:> Sec-WebSocket-Accept: ykj07PbzCuvgB6EL2s6OfFsdANQ=
+2024-12-04 19:20:41,465 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:20:41,465 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:20:41,465 DEBUG:= connection is OPEN
+2024-12-04 19:20:41,465 INFO:connection open
+2024-12-04 19:20:41,465 INFO:Connection received from client.
+2024-12-04 19:21:01,481 DEBUG:% sending keepalive ping
+2024-12-04 19:21:01,481 DEBUG:> PING 8e af e0 d3 [binary, 4 bytes]
+2024-12-04 19:21:01,612 DEBUG:< PONG 8e af e0 d3 [binary, 4 bytes]
+2024-12-04 19:21:01,612 DEBUG:% received keepalive pong
+2024-12-04 19:21:21,501 DEBUG:% sending keepalive ping
+2024-12-04 19:21:21,501 DEBUG:> PING 88 ea 82 e2 [binary, 4 bytes]
+2024-12-04 19:21:21,592 DEBUG:< PONG 88 ea 82 e2 [binary, 4 bytes]
+2024-12-04 19:21:21,592 DEBUG:% received keepalive pong
+2024-12-04 19:21:24,032 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:21:24,032 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:21:24,032 INFO:Preprocessing image...
+2024-12-04 19:21:24,032 DEBUG:Opening image...
+2024-12-04 19:21:24,032 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:21:24,032 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:21:24,032 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:21:24,032 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:21:24,032 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:21:24,032 DEBUG:Image opened successfully.
+2024-12-04 19:21:24,032 DEBUG:Image transformed into tensor.
+2024-12-04 19:21:24,032 INFO:Image preprocessed successfully.
+2024-12-04 19:21:24,032 INFO:Running model inference...
+2024-12-04 19:21:24,047 INFO:Model inference completed.
+2024-12-04 19:21:24,079 DEBUG:Confidence score: 0.00027090232470072806
+2024-12-04 19:21:24,079 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:21:24,079 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:21:24,079 INFO:Response sent to client.
+2024-12-04 19:21:24,079 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:21:24,079 DEBUG:= connection is CLOSING
+2024-12-04 19:21:24,142 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:21:24,143 DEBUG:> EOF
+2024-12-04 19:21:24,143 DEBUG:x half-closing TCP connection
+2024-12-04 19:21:24,143 DEBUG:< EOF
+2024-12-04 19:21:24,143 DEBUG:= connection is CLOSED
+2024-12-04 19:21:43,596 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:21:43,596 INFO:9170 class names loaded.
+2024-12-04 19:21:43,992 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:21:44,157 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:21:44,278 INFO:Model state dict loaded.
+2024-12-04 19:21:44,370 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:21:44,429 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:21:44,429 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:21:44,429 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:21:44,447 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:21:44,447 INFO:Server started and waiting for connections...
+2024-12-04 19:21:44,447 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:22:05,165 DEBUG:= connection is CONNECTING
+2024-12-04 19:22:05,165 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:22:05,165 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:22:05,165 DEBUG:< Accept: */*
+2024-12-04 19:22:05,165 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:22:05,180 DEBUG:< Upgrade: websocket
+2024-12-04 19:22:05,181 DEBUG:< Connection: Upgrade
+2024-12-04 19:22:05,181 DEBUG:< Sec-WebSocket-Key: P0ZyEfebOzaZcnD9A1xaRw==
+2024-12-04 19:22:05,181 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:22:05,181 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:22:05,181 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:22:05,181 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:22:05,182 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:22:05,182 DEBUG:> Date: Wed, 04 Dec 2024 14:22:05 GMT
+2024-12-04 19:22:05,182 DEBUG:> Upgrade: websocket
+2024-12-04 19:22:05,182 DEBUG:> Connection: Upgrade
+2024-12-04 19:22:05,182 DEBUG:> Sec-WebSocket-Accept: 6Pc4sCoBo0ZMdDwVRqRob6zRlQ4=
+2024-12-04 19:22:05,182 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:22:05,183 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:22:05,183 DEBUG:= connection is OPEN
+2024-12-04 19:22:05,183 INFO:connection open
+2024-12-04 19:22:05,183 INFO:Connection received from client.
+2024-12-04 19:22:06,739 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:22:06,740 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:22:06,740 INFO:Preprocessing image...
+2024-12-04 19:22:06,740 DEBUG:Opening image...
+2024-12-04 19:22:06,740 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:22:06,740 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:22:06,740 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:22:06,740 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:22:06,747 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:22:06,748 DEBUG:Image opened successfully.
+2024-12-04 19:22:06,749 DEBUG:Image transformed into tensor.
+2024-12-04 19:22:06,750 INFO:Image preprocessed successfully.
+2024-12-04 19:22:06,750 INFO:Running model inference...
+2024-12-04 19:22:07,018 INFO:Model inference completed.
+2024-12-04 19:22:07,018 DEBUG:Confidence score: 0.0003601905482355505
+2024-12-04 19:22:07,018 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:22:07,018 DEBUG:> TEXT '" "' [3 bytes]
+2024-12-04 19:22:07,018 INFO:Response sent to client.
+2024-12-04 19:22:07,018 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:22:07,018 DEBUG:= connection is CLOSING
+2024-12-04 19:22:07,116 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:22:07,116 DEBUG:> EOF
+2024-12-04 19:22:07,116 DEBUG:x half-closing TCP connection
+2024-12-04 19:22:07,117 DEBUG:< EOF
+2024-12-04 19:22:07,117 DEBUG:= connection is CLOSED
+2024-12-04 19:22:47,078 DEBUG:= connection is CONNECTING
+2024-12-04 19:22:47,078 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:22:47,078 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:22:47,078 DEBUG:< Accept: */*
+2024-12-04 19:22:47,078 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:22:47,078 DEBUG:< Upgrade: websocket
+2024-12-04 19:22:47,078 DEBUG:< Connection: Upgrade
+2024-12-04 19:22:47,078 DEBUG:< Sec-WebSocket-Key: sHWZcmTQ3MORv+HgiOBLUw==
+2024-12-04 19:22:47,078 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:22:47,078 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:22:47,078 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:22:47,078 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:22:47,078 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:22:47,078 DEBUG:> Date: Wed, 04 Dec 2024 14:22:47 GMT
+2024-12-04 19:22:47,078 DEBUG:> Upgrade: websocket
+2024-12-04 19:22:47,078 DEBUG:> Connection: Upgrade
+2024-12-04 19:22:47,078 DEBUG:> Sec-WebSocket-Accept: Lfi2P/MglBOxg27lb5qyWeOgvxk=
+2024-12-04 19:22:47,078 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:22:47,078 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:22:47,078 DEBUG:= connection is OPEN
+2024-12-04 19:22:47,078 INFO:connection open
+2024-12-04 19:22:47,078 INFO:Connection received from client.
+2024-12-04 19:22:48,480 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:22:48,480 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:22:48,480 INFO:Preprocessing image...
+2024-12-04 19:22:48,480 DEBUG:Opening image...
+2024-12-04 19:22:48,480 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:22:48,480 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:22:48,480 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:22:48,480 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:22:48,480 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:22:48,480 DEBUG:Image opened successfully.
+2024-12-04 19:22:48,496 DEBUG:Image transformed into tensor.
+2024-12-04 19:22:48,496 INFO:Image preprocessed successfully.
+2024-12-04 19:22:48,496 INFO:Running model inference...
+2024-12-04 19:22:48,507 INFO:Model inference completed.
+2024-12-04 19:22:48,540 DEBUG:Confidence score: 0.0003601905482355505
+2024-12-04 19:22:48,540 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:22:48,540 DEBUG:> TEXT '" "' [3 bytes]
+2024-12-04 19:22:48,540 INFO:Response sent to client.
+2024-12-04 19:22:48,540 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:22:48,540 DEBUG:= connection is CLOSING
+2024-12-04 19:22:48,704 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:22:48,704 DEBUG:> EOF
+2024-12-04 19:22:48,704 DEBUG:x half-closing TCP connection
+2024-12-04 19:22:48,705 DEBUG:< EOF
+2024-12-04 19:22:48,705 DEBUG:= connection is CLOSED
+2024-12-04 19:23:10,372 DEBUG:= connection is CONNECTING
+2024-12-04 19:23:10,372 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:23:10,372 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:23:10,372 DEBUG:< Accept: */*
+2024-12-04 19:23:10,372 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:23:10,372 DEBUG:< Upgrade: websocket
+2024-12-04 19:23:10,372 DEBUG:< Connection: Upgrade
+2024-12-04 19:23:10,376 DEBUG:< Sec-WebSocket-Key: dVykOdxjrFFM/HEElkEiEA==
+2024-12-04 19:23:10,376 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:23:10,376 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:23:10,376 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:23:10,376 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:23:10,376 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:23:10,376 DEBUG:> Date: Wed, 04 Dec 2024 14:23:10 GMT
+2024-12-04 19:23:10,376 DEBUG:> Upgrade: websocket
+2024-12-04 19:23:10,376 DEBUG:> Connection: Upgrade
+2024-12-04 19:23:10,376 DEBUG:> Sec-WebSocket-Accept: ptsiFPpRZiHI7OiMfxQN1wvstVY=
+2024-12-04 19:23:10,376 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:23:10,376 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:23:10,376 DEBUG:= connection is OPEN
+2024-12-04 19:23:10,376 INFO:connection open
+2024-12-04 19:23:10,376 INFO:Connection received from client.
+2024-12-04 19:23:12,819 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:23:12,819 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:23:12,819 INFO:Preprocessing image...
+2024-12-04 19:23:12,819 DEBUG:Opening image...
+2024-12-04 19:23:12,820 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:23:12,820 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:23:12,820 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:23:12,820 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:23:12,820 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:23:12,822 DEBUG:Image opened successfully.
+2024-12-04 19:23:12,822 DEBUG:Image transformed into tensor.
+2024-12-04 19:23:12,822 INFO:Image preprocessed successfully.
+2024-12-04 19:23:12,822 INFO:Running model inference...
+2024-12-04 19:23:12,836 INFO:Model inference completed.
+2024-12-04 19:23:12,870 DEBUG:Confidence score: 0.0003601905482355505
+2024-12-04 19:23:12,870 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:23:12,870 DEBUG:> TEXT '" "' [3 bytes]
+2024-12-04 19:23:12,871 INFO:Response sent to client.
+2024-12-04 19:23:12,871 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:23:12,871 DEBUG:= connection is CLOSING
+2024-12-04 19:23:12,927 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:23:12,927 DEBUG:> EOF
+2024-12-04 19:23:12,942 DEBUG:x half-closing TCP connection
+2024-12-04 19:23:12,942 DEBUG:< EOF
+2024-12-04 19:23:12,942 DEBUG:= connection is CLOSED
+2024-12-04 19:24:14,170 DEBUG:= connection is CONNECTING
+2024-12-04 19:24:14,209 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:24:14,209 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:24:14,209 DEBUG:< Accept: */*
+2024-12-04 19:24:14,209 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:24:14,210 DEBUG:< Upgrade: websocket
+2024-12-04 19:24:14,210 DEBUG:< Connection: Upgrade
+2024-12-04 19:24:14,210 DEBUG:< Sec-WebSocket-Key: p2zD26UnFUlkXYoyKILdGw==
+2024-12-04 19:24:14,211 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:24:14,211 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:24:14,211 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:24:14,211 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:24:14,211 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:24:14,211 DEBUG:> Date: Wed, 04 Dec 2024 14:24:14 GMT
+2024-12-04 19:24:14,212 DEBUG:> Upgrade: websocket
+2024-12-04 19:24:14,212 DEBUG:> Connection: Upgrade
+2024-12-04 19:24:14,212 DEBUG:> Sec-WebSocket-Accept: pas1Bz56ueAfSwcYjbJ//BRUP3s=
+2024-12-04 19:24:14,212 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:24:14,212 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:24:14,212 DEBUG:= connection is OPEN
+2024-12-04 19:24:14,212 INFO:connection open
+2024-12-04 19:24:14,213 INFO:Connection received from client.
+2024-12-04 19:24:17,720 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:24:17,720 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:24:17,720 INFO:Preprocessing image...
+2024-12-04 19:24:17,720 DEBUG:Opening image...
+2024-12-04 19:24:17,720 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:24:17,720 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:24:17,720 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:24:17,720 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:24:17,720 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:24:17,720 DEBUG:Image opened successfully.
+2024-12-04 19:24:17,720 DEBUG:Image transformed into tensor.
+2024-12-04 19:24:17,720 INFO:Image preprocessed successfully.
+2024-12-04 19:24:17,720 INFO:Running model inference...
+2024-12-04 19:24:17,739 INFO:Model inference completed.
+2024-12-04 19:24:17,771 DEBUG:Confidence score: 0.0003601905482355505
+2024-12-04 19:24:17,771 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:24:17,771 DEBUG:> TEXT '" "' [3 bytes]
+2024-12-04 19:24:17,771 INFO:Response sent to client.
+2024-12-04 19:24:17,771 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:24:17,771 DEBUG:= connection is CLOSING
+2024-12-04 19:24:18,012 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:24:18,012 DEBUG:> EOF
+2024-12-04 19:24:18,012 DEBUG:x half-closing TCP connection
+2024-12-04 19:24:18,012 DEBUG:< EOF
+2024-12-04 19:24:18,012 DEBUG:= connection is CLOSED
+2024-12-04 19:24:55,856 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:24:55,856 INFO:9170 class names loaded.
+2024-12-04 19:24:56,265 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:24:56,466 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:24:56,589 INFO:Model state dict loaded.
+2024-12-04 19:24:56,690 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:24:56,728 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:24:56,728 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:24:56,728 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:24:56,738 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:24:56,738 INFO:Server started and waiting for connections...
+2024-12-04 19:24:56,738 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:25:09,839 DEBUG:= connection is CONNECTING
+2024-12-04 19:25:09,855 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:25:09,855 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:25:09,855 DEBUG:< Accept: */*
+2024-12-04 19:25:09,855 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:25:09,862 DEBUG:< Upgrade: websocket
+2024-12-04 19:25:09,862 DEBUG:< Connection: Upgrade
+2024-12-04 19:25:09,862 DEBUG:< Sec-WebSocket-Key: dmCYXuTFkRJ3B7sV/57zMQ==
+2024-12-04 19:25:09,862 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:25:09,862 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:25:09,862 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:25:09,862 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:25:09,863 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:25:09,863 DEBUG:> Date: Wed, 04 Dec 2024 14:25:09 GMT
+2024-12-04 19:25:09,863 DEBUG:> Upgrade: websocket
+2024-12-04 19:25:09,863 DEBUG:> Connection: Upgrade
+2024-12-04 19:25:09,863 DEBUG:> Sec-WebSocket-Accept: 5cHI/ZPU2KtshcwIJ86nBoTyH3Y=
+2024-12-04 19:25:09,863 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:25:09,863 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:25:09,863 DEBUG:= connection is OPEN
+2024-12-04 19:25:09,863 INFO:connection open
+2024-12-04 19:25:09,865 INFO:Connection received from client.
+2024-12-04 19:25:12,998 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:25:12,998 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:25:12,998 INFO:Preprocessing image...
+2024-12-04 19:25:12,998 DEBUG:Opening image...
+2024-12-04 19:25:13,002 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:25:13,002 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:25:13,002 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:25:13,002 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:25:13,008 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:25:13,008 DEBUG:Image opened successfully.
+2024-12-04 19:25:13,010 DEBUG:Image transformed into tensor.
+2024-12-04 19:25:13,011 INFO:Image preprocessed successfully.
+2024-12-04 19:25:13,011 INFO:Running model inference...
+2024-12-04 19:25:13,261 INFO:Model inference completed.
+2024-12-04 19:25:13,261 DEBUG:Confidence score: 0.0002692574344109744
+2024-12-04 19:25:13,261 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:25:13,261 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:25:13,261 INFO:Response sent to client.
+2024-12-04 19:25:13,261 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:25:13,261 DEBUG:= connection is CLOSING
+2024-12-04 19:25:13,516 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:25:13,516 DEBUG:> EOF
+2024-12-04 19:25:13,516 DEBUG:x half-closing TCP connection
+2024-12-04 19:25:13,516 DEBUG:< EOF
+2024-12-04 19:25:13,529 DEBUG:= connection is CLOSED
+2024-12-04 19:25:34,689 DEBUG:= connection is CONNECTING
+2024-12-04 19:25:34,706 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:25:34,706 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:25:34,707 DEBUG:< Accept: */*
+2024-12-04 19:25:34,707 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:25:34,707 DEBUG:< Upgrade: websocket
+2024-12-04 19:25:34,707 DEBUG:< Connection: Upgrade
+2024-12-04 19:25:34,707 DEBUG:< Sec-WebSocket-Key: WmgljETVcofR7Ukdp+5S3A==
+2024-12-04 19:25:34,707 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:25:34,707 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:25:34,708 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:25:34,708 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:25:34,708 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:25:34,708 DEBUG:> Date: Wed, 04 Dec 2024 14:25:34 GMT
+2024-12-04 19:25:34,708 DEBUG:> Upgrade: websocket
+2024-12-04 19:25:34,708 DEBUG:> Connection: Upgrade
+2024-12-04 19:25:34,708 DEBUG:> Sec-WebSocket-Accept: GOUFWsBkHQdj701LXuTteYtjxQQ=
+2024-12-04 19:25:34,708 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:25:34,708 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:25:34,709 DEBUG:= connection is OPEN
+2024-12-04 19:25:34,709 INFO:connection open
+2024-12-04 19:25:34,710 INFO:Connection received from client.
+2024-12-04 19:25:47,880 DEBUG:< EOF
+2024-12-04 19:25:47,880 DEBUG:> EOF
+2024-12-04 19:25:47,880 DEBUG:< EOF
+2024-12-04 19:25:47,880 DEBUG:= connection is CLOSED
+2024-12-04 19:25:47,880 WARNING:Client disconnected: no close frame received or sent
+2024-12-04 19:26:10,723 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:26:10,723 INFO:9170 class names loaded.
+2024-12-04 19:26:11,116 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:26:11,292 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:26:11,412 INFO:Model state dict loaded.
+2024-12-04 19:26:11,501 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:26:11,535 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:26:11,535 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:26:11,535 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:26:11,549 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:26:11,549 INFO:Server started and waiting for connections...
+2024-12-04 19:26:11,550 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:26:13,230 DEBUG:= connection is CONNECTING
+2024-12-04 19:26:13,253 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:26:13,253 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:26:13,253 DEBUG:< Accept: */*
+2024-12-04 19:26:13,253 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:26:13,254 DEBUG:< Upgrade: websocket
+2024-12-04 19:26:13,254 DEBUG:< Connection: Upgrade
+2024-12-04 19:26:13,254 DEBUG:< Sec-WebSocket-Key: o2zrGPzW5TfnNxJsp4J4Zw==
+2024-12-04 19:26:13,254 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:26:13,254 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:26:13,254 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:26:13,254 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:26:13,254 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:26:13,254 DEBUG:> Date: Wed, 04 Dec 2024 14:26:13 GMT
+2024-12-04 19:26:13,254 DEBUG:> Upgrade: websocket
+2024-12-04 19:26:13,254 DEBUG:> Connection: Upgrade
+2024-12-04 19:26:13,254 DEBUG:> Sec-WebSocket-Accept: k/eG+ukRPA/QbPM9H3/3fXFlcUo=
+2024-12-04 19:26:13,255 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:26:13,255 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:26:13,255 DEBUG:= connection is OPEN
+2024-12-04 19:26:13,255 INFO:connection open
+2024-12-04 19:26:13,255 INFO:Connection received from client.
+2024-12-04 19:26:21,328 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [62772 bytes]
+2024-12-04 19:26:21,328 DEBUG:Received 62772 bytes of data from client.
+2024-12-04 19:26:21,328 INFO:Preprocessing image...
+2024-12-04 19:26:21,328 DEBUG:Opening image...
+2024-12-04 19:26:21,343 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:26:21,343 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:26:21,343 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:26:21,343 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:26:21,344 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:26:21,345 DEBUG:Image opened successfully.
+2024-12-04 19:26:21,347 DEBUG:Image transformed into tensor.
+2024-12-04 19:26:21,349 INFO:Image preprocessed successfully.
+2024-12-04 19:26:21,349 INFO:Running model inference...
+2024-12-04 19:26:21,622 INFO:Model inference completed.
+2024-12-04 19:26:21,622 DEBUG:Confidence score: 0.00033482073922641575
+2024-12-04 19:26:21,622 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:26:21,622 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:26:21,622 INFO:Response sent to client.
+2024-12-04 19:26:21,622 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:26:21,622 DEBUG:= connection is CLOSING
+2024-12-04 19:26:21,800 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:26:21,800 DEBUG:> EOF
+2024-12-04 19:26:21,800 DEBUG:x half-closing TCP connection
+2024-12-04 19:26:21,801 DEBUG:< EOF
+2024-12-04 19:26:21,801 DEBUG:= connection is CLOSED
+2024-12-04 19:27:42,982 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:27:42,982 INFO:9170 class names loaded.
+2024-12-04 19:27:43,384 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:27:43,564 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:27:43,674 INFO:Model state dict loaded.
+2024-12-04 19:27:43,763 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:27:43,809 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:27:43,809 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:27:43,810 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:27:43,818 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:27:43,818 INFO:Server started and waiting for connections...
+2024-12-04 19:27:43,819 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:27:46,660 DEBUG:= connection is CONNECTING
+2024-12-04 19:27:46,666 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:27:46,666 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:27:46,666 DEBUG:< Accept: */*
+2024-12-04 19:27:46,666 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:27:46,667 DEBUG:< Upgrade: websocket
+2024-12-04 19:27:46,667 DEBUG:< Connection: Upgrade
+2024-12-04 19:27:46,667 DEBUG:< Sec-WebSocket-Key: 4DCKNNgOAsf6KpujHhRB8A==
+2024-12-04 19:27:46,667 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:27:46,667 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:27:46,667 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:27:46,667 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:27:46,668 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:27:46,668 DEBUG:> Date: Wed, 04 Dec 2024 14:27:46 GMT
+2024-12-04 19:27:46,668 DEBUG:> Upgrade: websocket
+2024-12-04 19:27:46,668 DEBUG:> Connection: Upgrade
+2024-12-04 19:27:46,668 DEBUG:> Sec-WebSocket-Accept: 7DergRFuy3Kc2R7AgdabNzIFoeQ=
+2024-12-04 19:27:46,668 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:27:46,668 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:27:46,668 DEBUG:= connection is OPEN
+2024-12-04 19:27:46,669 INFO:connection open
+2024-12-04 19:27:46,669 INFO:Connection received from client.
+2024-12-04 19:27:49,461 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:27:49,461 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:27:49,461 INFO:Preprocessing image...
+2024-12-04 19:27:49,461 DEBUG:Opening image...
+2024-12-04 19:27:49,471 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:27:49,471 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:27:49,471 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:27:49,475 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:27:49,475 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:27:49,477 DEBUG:Image opened successfully.
+2024-12-04 19:27:49,478 DEBUG:Image transformed into tensor.
+2024-12-04 19:27:49,480 INFO:Image preprocessed successfully.
+2024-12-04 19:27:49,480 INFO:Running model inference...
+2024-12-04 19:27:49,702 INFO:Model inference completed.
+2024-12-04 19:27:49,702 DEBUG:Confidence score: 0.00031573796877637506
+2024-12-04 19:27:49,702 INFO:Predicted class: ['pontiac', 'chieftain 1978']
+2024-12-04 19:27:49,702 DEBUG:> TEXT '["pontiac", "chieftain 1978"]' [29 bytes]
+2024-12-04 19:27:49,702 INFO:Response sent to client.
+2024-12-04 19:27:49,702 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:27:49,702 DEBUG:= connection is CLOSING
+2024-12-04 19:27:49,790 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:27:49,790 DEBUG:> EOF
+2024-12-04 19:27:49,790 DEBUG:x half-closing TCP connection
+2024-12-04 19:27:49,790 DEBUG:< EOF
+2024-12-04 19:27:49,790 DEBUG:= connection is CLOSED
+2024-12-04 19:28:13,991 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:28:13,993 INFO:9170 class names loaded.
+2024-12-04 19:28:14,395 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:28:14,580 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:28:14,679 INFO:Model state dict loaded.
+2024-12-04 19:28:14,765 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:28:14,811 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:28:14,812 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:28:14,812 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:28:14,814 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:28:14,814 INFO:Server started and waiting for connections...
+2024-12-04 19:28:14,814 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:28:19,746 DEBUG:= connection is CONNECTING
+2024-12-04 19:28:19,756 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:28:19,756 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:28:19,756 DEBUG:< Accept: */*
+2024-12-04 19:28:19,756 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:28:19,756 DEBUG:< Upgrade: websocket
+2024-12-04 19:28:19,756 DEBUG:< Connection: Upgrade
+2024-12-04 19:28:19,756 DEBUG:< Sec-WebSocket-Key: T4kwh393RlL9J9FXZijX1A==
+2024-12-04 19:28:19,756 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:28:19,756 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:28:19,762 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:28:19,762 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:28:19,762 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:28:19,762 DEBUG:> Date: Wed, 04 Dec 2024 14:28:19 GMT
+2024-12-04 19:28:19,762 DEBUG:> Upgrade: websocket
+2024-12-04 19:28:19,763 DEBUG:> Connection: Upgrade
+2024-12-04 19:28:19,763 DEBUG:> Sec-WebSocket-Accept: 6aF78UBbBsndgsj9wU7QzJvTDnE=
+2024-12-04 19:28:19,763 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:28:19,763 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:28:19,763 DEBUG:= connection is OPEN
+2024-12-04 19:28:19,763 INFO:connection open
+2024-12-04 19:28:19,763 INFO:Connection received from client.
+2024-12-04 19:28:22,167 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 19:28:22,167 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 19:28:22,167 INFO:Preprocessing image...
+2024-12-04 19:28:22,167 DEBUG:Opening image...
+2024-12-04 19:28:22,183 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:28:22,183 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:28:22,183 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:28:22,183 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:28:22,183 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:28:22,187 DEBUG:Image opened successfully.
+2024-12-04 19:28:22,189 DEBUG:Image transformed into tensor.
+2024-12-04 19:28:22,190 INFO:Image preprocessed successfully.
+2024-12-04 19:28:22,190 INFO:Running model inference...
+2024-12-04 19:28:22,434 INFO:Model inference completed.
+2024-12-04 19:28:22,434 DEBUG:Confidence score: 0.00028729619225487113
+2024-12-04 19:28:22,434 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:28:22,434 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:28:22,434 INFO:Response sent to client.
+2024-12-04 19:28:22,434 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:28:22,434 DEBUG:= connection is CLOSING
+2024-12-04 19:28:22,528 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:28:22,528 DEBUG:> EOF
+2024-12-04 19:28:22,528 DEBUG:x half-closing TCP connection
+2024-12-04 19:28:22,528 DEBUG:< EOF
+2024-12-04 19:28:22,529 DEBUG:= connection is CLOSED
+2024-12-04 19:29:17,237 DEBUG:= connection is CONNECTING
+2024-12-04 19:29:17,250 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:29:17,250 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:29:17,250 DEBUG:< Accept: */*
+2024-12-04 19:29:17,250 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:29:17,250 DEBUG:< Upgrade: websocket
+2024-12-04 19:29:17,253 DEBUG:< Connection: Upgrade
+2024-12-04 19:29:17,253 DEBUG:< Sec-WebSocket-Key: tFKCFJR0A5vugaWnB8huJA==
+2024-12-04 19:29:17,253 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:29:17,254 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:29:17,254 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:29:17,254 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:29:17,255 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:29:17,255 DEBUG:> Date: Wed, 04 Dec 2024 14:29:17 GMT
+2024-12-04 19:29:17,255 DEBUG:> Upgrade: websocket
+2024-12-04 19:29:17,255 DEBUG:> Connection: Upgrade
+2024-12-04 19:29:17,255 DEBUG:> Sec-WebSocket-Accept: fqPxY0SA2SqsuznhIxwncc9yotg=
+2024-12-04 19:29:17,255 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:29:17,255 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:29:17,255 DEBUG:= connection is OPEN
+2024-12-04 19:29:17,255 INFO:connection open
+2024-12-04 19:29:17,255 INFO:Connection received from client.
+2024-12-04 19:29:31,260 DEBUG:< EOF
+2024-12-04 19:29:31,260 DEBUG:> EOF
+2024-12-04 19:29:31,260 DEBUG:< EOF
+2024-12-04 19:29:31,260 DEBUG:= connection is CLOSED
+2024-12-04 19:29:31,260 WARNING:Client disconnected: no close frame received or sent
+2024-12-04 19:31:42,752 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:31:42,752 INFO:9170 class names loaded.
+2024-12-04 19:31:43,164 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:31:43,338 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:31:43,444 INFO:Model state dict loaded.
+2024-12-04 19:31:43,531 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:31:43,572 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:31:43,572 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:31:43,572 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:31:43,588 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:31:43,588 INFO:Server started and waiting for connections...
+2024-12-04 19:31:43,588 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:31:47,054 DEBUG:= connection is CONNECTING
+2024-12-04 19:31:47,054 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:31:47,054 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:31:47,054 DEBUG:< Accept: */*
+2024-12-04 19:31:47,060 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:31:47,060 DEBUG:< Upgrade: websocket
+2024-12-04 19:31:47,060 DEBUG:< Connection: Upgrade
+2024-12-04 19:31:47,060 DEBUG:< Sec-WebSocket-Key: AbqVKvICg3Lx9cL7PdRMjw==
+2024-12-04 19:31:47,060 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:31:47,060 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:31:47,060 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:31:47,060 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:31:47,060 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:31:47,060 DEBUG:> Date: Wed, 04 Dec 2024 14:31:47 GMT
+2024-12-04 19:31:47,060 DEBUG:> Upgrade: websocket
+2024-12-04 19:31:47,060 DEBUG:> Connection: Upgrade
+2024-12-04 19:31:47,060 DEBUG:> Sec-WebSocket-Accept: iplcG4SOaEr4F/Bp3qHfvoiNwNM=
+2024-12-04 19:31:47,060 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:31:47,060 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:31:47,060 DEBUG:= connection is OPEN
+2024-12-04 19:31:47,060 INFO:connection open
+2024-12-04 19:31:47,060 INFO:Connection received from client.
+2024-12-04 19:31:57,300 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [59856 bytes]
+2024-12-04 19:31:57,300 DEBUG:Received 59856 bytes of data from client.
+2024-12-04 19:31:57,300 INFO:Preprocessing image...
+2024-12-04 19:31:57,300 DEBUG:Opening image...
+2024-12-04 19:31:57,303 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:31:57,303 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:31:57,303 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:31:57,303 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:31:57,309 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:31:57,310 DEBUG:Image opened successfully.
+2024-12-04 19:31:57,314 DEBUG:Image transformed into tensor.
+2024-12-04 19:31:57,315 INFO:Image preprocessed successfully.
+2024-12-04 19:31:57,315 INFO:Running model inference...
+2024-12-04 19:31:57,605 INFO:Model inference completed.
+2024-12-04 19:31:57,605 DEBUG:Confidence score: 0.00036809779703617096
+2024-12-04 19:31:57,605 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:31:57,605 DEBUG:> TEXT '""' [2 bytes]
+2024-12-04 19:31:57,606 INFO:Response sent to client.
+2024-12-04 19:31:57,606 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:31:57,606 DEBUG:= connection is CLOSING
+2024-12-04 19:31:57,666 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:31:57,666 DEBUG:> EOF
+2024-12-04 19:31:57,667 DEBUG:x half-closing TCP connection
+2024-12-04 19:31:57,667 DEBUG:< EOF
+2024-12-04 19:31:57,667 DEBUG:= connection is CLOSED
+2024-12-04 19:32:29,487 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:32:29,487 INFO:9170 class names loaded.
+2024-12-04 19:32:29,882 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:32:30,060 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:32:30,158 INFO:Model state dict loaded.
+2024-12-04 19:32:30,246 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:32:30,298 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:32:30,298 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:32:30,299 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:32:30,308 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:32:30,308 INFO:Server started and waiting for connections...
+2024-12-04 19:32:30,308 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:32:33,234 DEBUG:= connection is CONNECTING
+2024-12-04 19:32:33,245 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:32:33,246 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:32:33,246 DEBUG:< Accept: */*
+2024-12-04 19:32:33,246 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:32:33,246 DEBUG:< Upgrade: websocket
+2024-12-04 19:32:33,247 DEBUG:< Connection: Upgrade
+2024-12-04 19:32:33,247 DEBUG:< Sec-WebSocket-Key: sfOZRK8CN1Sv5sORbA5rVg==
+2024-12-04 19:32:33,247 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:32:33,247 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:32:33,247 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:32:33,247 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:32:33,248 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:32:33,248 DEBUG:> Date: Wed, 04 Dec 2024 14:32:33 GMT
+2024-12-04 19:32:33,248 DEBUG:> Upgrade: websocket
+2024-12-04 19:32:33,248 DEBUG:> Connection: Upgrade
+2024-12-04 19:32:33,248 DEBUG:> Sec-WebSocket-Accept: IFz+5HcH6H/6c1cqh6zTfUkHRHw=
+2024-12-04 19:32:33,248 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:32:33,249 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:32:33,249 DEBUG:= connection is OPEN
+2024-12-04 19:32:33,249 INFO:connection open
+2024-12-04 19:32:33,249 INFO:Connection received from client.
+2024-12-04 19:32:45,983 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [60967 bytes]
+2024-12-04 19:32:45,983 DEBUG:Received 60967 bytes of data from client.
+2024-12-04 19:32:45,983 INFO:Preprocessing image...
+2024-12-04 19:32:45,983 DEBUG:Opening image...
+2024-12-04 19:32:45,983 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:32:45,983 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:32:45,983 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:32:45,983 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:32:45,983 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:32:45,992 DEBUG:Image opened successfully.
+2024-12-04 19:32:45,995 DEBUG:Image transformed into tensor.
+2024-12-04 19:32:45,996 INFO:Image preprocessed successfully.
+2024-12-04 19:32:45,996 INFO:Running model inference...
+2024-12-04 19:32:46,295 INFO:Model inference completed.
+2024-12-04 19:32:46,295 DEBUG:Confidence score: 0.00038203512667678297
+2024-12-04 19:32:46,295 INFO:Predicted class: ['ford', 'thunderbird 1965']
+2024-12-04 19:32:46,295 DEBUG:> TEXT '["ford", "thunderbird 1965"]' [28 bytes]
+2024-12-04 19:32:46,295 INFO:Response sent to client.
+2024-12-04 19:32:46,295 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:32:46,295 DEBUG:= connection is CLOSING
+2024-12-04 19:32:46,455 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:32:46,455 DEBUG:> EOF
+2024-12-04 19:32:46,455 DEBUG:x half-closing TCP connection
+2024-12-04 19:32:46,459 DEBUG:< EOF
+2024-12-04 19:32:46,459 DEBUG:= connection is CLOSED
+2024-12-04 19:34:45,853 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:34:45,868 INFO:9170 class names loaded.
+2024-12-04 19:34:46,264 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:34:46,432 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:34:46,547 INFO:Model state dict loaded.
+2024-12-04 19:34:46,638 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:34:46,682 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:34:46,682 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:34:46,682 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:34:46,699 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:34:46,699 INFO:Server started and waiting for connections...
+2024-12-04 19:34:46,699 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:34:50,512 DEBUG:= connection is CONNECTING
+2024-12-04 19:34:50,515 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:34:50,515 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:34:50,515 DEBUG:< Accept: */*
+2024-12-04 19:34:50,515 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:34:50,515 DEBUG:< Upgrade: websocket
+2024-12-04 19:34:50,515 DEBUG:< Connection: Upgrade
+2024-12-04 19:34:50,519 DEBUG:< Sec-WebSocket-Key: WwDG7JSFOzvTkAA/tqoZvg==
+2024-12-04 19:34:50,519 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:34:50,519 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:34:50,519 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:34:50,519 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:34:50,520 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:34:50,520 DEBUG:> Date: Wed, 04 Dec 2024 14:34:50 GMT
+2024-12-04 19:34:50,520 DEBUG:> Upgrade: websocket
+2024-12-04 19:34:50,520 DEBUG:> Connection: Upgrade
+2024-12-04 19:34:50,520 DEBUG:> Sec-WebSocket-Accept: Ho2lcNz9h/Gel2eGN0oxu8qBMnY=
+2024-12-04 19:34:50,520 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:34:50,520 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:34:50,520 DEBUG:= connection is OPEN
+2024-12-04 19:34:50,521 INFO:connection open
+2024-12-04 19:34:50,521 INFO:Connection received from client.
+2024-12-04 19:35:00,240 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [61217 bytes]
+2024-12-04 19:35:00,240 DEBUG:Received 61217 bytes of data from client.
+2024-12-04 19:35:00,240 INFO:Preprocessing image...
+2024-12-04 19:35:00,240 DEBUG:Opening image...
+2024-12-04 19:35:00,257 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:35:00,258 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:35:00,258 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:35:00,258 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:35:00,258 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:35:00,259 DEBUG:Image opened successfully.
+2024-12-04 19:35:00,262 DEBUG:Image transformed into tensor.
+2024-12-04 19:35:00,263 INFO:Image preprocessed successfully.
+2024-12-04 19:35:00,263 INFO:Running model inference...
+2024-12-04 19:35:00,549 INFO:Model inference completed.
+2024-12-04 19:35:00,549 DEBUG:Confidence score: 0.0003338351671118289
+2024-12-04 19:35:00,549 INFO:Predicted class: mercedes benzc320 2004
+2024-12-04 19:35:00,549 DEBUG:> TEXT '"mercedes benzc320 2004"' [24 bytes]
+2024-12-04 19:35:00,549 INFO:Response sent to client.
+2024-12-04 19:35:00,549 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:35:00,549 DEBUG:= connection is CLOSING
+2024-12-04 19:35:00,661 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:35:00,661 DEBUG:> EOF
+2024-12-04 19:35:00,661 DEBUG:x half-closing TCP connection
+2024-12-04 19:35:00,670 DEBUG:< EOF
+2024-12-04 19:35:00,670 DEBUG:= connection is CLOSED
+2024-12-04 19:35:32,540 DEBUG:= connection is CONNECTING
+2024-12-04 19:35:32,574 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:35:32,574 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:35:32,574 DEBUG:< Accept: */*
+2024-12-04 19:35:32,574 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:35:32,574 DEBUG:< Upgrade: websocket
+2024-12-04 19:35:32,574 DEBUG:< Connection: Upgrade
+2024-12-04 19:35:32,574 DEBUG:< Sec-WebSocket-Key: 2lH149V3kHgtCo20Ax3pgA==
+2024-12-04 19:35:32,574 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:35:32,574 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:35:32,576 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:35:32,576 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:35:32,576 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:35:32,576 DEBUG:> Date: Wed, 04 Dec 2024 14:35:32 GMT
+2024-12-04 19:35:32,576 DEBUG:> Upgrade: websocket
+2024-12-04 19:35:32,576 DEBUG:> Connection: Upgrade
+2024-12-04 19:35:32,576 DEBUG:> Sec-WebSocket-Accept: PrqUSace4+AIfTdUZK4gwquol90=
+2024-12-04 19:35:32,576 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:35:32,576 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:35:32,576 DEBUG:= connection is OPEN
+2024-12-04 19:35:32,577 INFO:connection open
+2024-12-04 19:35:32,577 INFO:Connection received from client.
+2024-12-04 19:35:42,739 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [63762 bytes]
+2024-12-04 19:35:42,744 DEBUG:Received 63762 bytes of data from client.
+2024-12-04 19:35:42,744 INFO:Preprocessing image...
+2024-12-04 19:35:42,744 DEBUG:Opening image...
+2024-12-04 19:35:42,744 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:35:42,744 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:35:42,744 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:35:42,744 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:35:42,744 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:35:42,744 DEBUG:Image opened successfully.
+2024-12-04 19:35:42,744 DEBUG:Image transformed into tensor.
+2024-12-04 19:35:42,749 INFO:Image preprocessed successfully.
+2024-12-04 19:35:42,749 INFO:Running model inference...
+2024-12-04 19:35:42,756 INFO:Model inference completed.
+2024-12-04 19:35:42,793 DEBUG:Confidence score: 0.00035368226235732436
+2024-12-04 19:35:42,793 INFO:Predicted class: hondas2000 2003
+2024-12-04 19:35:42,793 DEBUG:> TEXT '"hondas2000 2003"' [17 bytes]
+2024-12-04 19:35:42,793 INFO:Response sent to client.
+2024-12-04 19:35:42,793 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:35:42,793 DEBUG:= connection is CLOSING
+2024-12-04 19:35:42,937 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:35:42,937 DEBUG:> EOF
+2024-12-04 19:35:42,937 DEBUG:x half-closing TCP connection
+2024-12-04 19:35:42,937 DEBUG:< EOF
+2024-12-04 19:35:42,937 DEBUG:= connection is CLOSED
+2024-12-04 19:37:15,713 DEBUG:= connection is CONNECTING
+2024-12-04 19:37:15,713 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:37:15,713 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:37:15,713 DEBUG:< Accept: */*
+2024-12-04 19:37:15,713 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:37:15,713 DEBUG:< Upgrade: websocket
+2024-12-04 19:37:15,713 DEBUG:< Connection: Upgrade
+2024-12-04 19:37:15,713 DEBUG:< Sec-WebSocket-Key: 5FUmxByhbMzoMCzCN1tcog==
+2024-12-04 19:37:15,720 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:37:15,720 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:37:15,720 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:37:15,721 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:37:15,721 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:37:15,721 DEBUG:> Date: Wed, 04 Dec 2024 14:37:15 GMT
+2024-12-04 19:37:15,721 DEBUG:> Upgrade: websocket
+2024-12-04 19:37:15,721 DEBUG:> Connection: Upgrade
+2024-12-04 19:37:15,721 DEBUG:> Sec-WebSocket-Accept: sY5scmOKjc0mKJ9g+pqUFqSipbg=
+2024-12-04 19:37:15,721 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:37:15,721 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:37:15,721 DEBUG:= connection is OPEN
+2024-12-04 19:37:15,721 INFO:connection open
+2024-12-04 19:37:15,721 INFO:Connection received from client.
+2024-12-04 19:37:28,309 DEBUG:< EOF
+2024-12-04 19:37:28,309 DEBUG:> EOF
+2024-12-04 19:37:28,309 DEBUG:< EOF
+2024-12-04 19:37:28,311 DEBUG:= connection is CLOSED
+2024-12-04 19:37:28,311 WARNING:Client disconnected: no close frame received or sent
+2024-12-04 19:38:12,570 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:38:12,570 INFO:9170 class names loaded.
+2024-12-04 19:38:12,948 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:38:13,133 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:38:13,253 INFO:Model state dict loaded.
+2024-12-04 19:38:13,354 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:38:13,394 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:38:13,394 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:38:13,394 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:38:13,406 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:38:13,406 INFO:Server started and waiting for connections...
+2024-12-04 19:38:13,406 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:38:17,175 DEBUG:= connection is CONNECTING
+2024-12-04 19:38:17,206 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:38:17,206 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:38:17,206 DEBUG:< Accept: */*
+2024-12-04 19:38:17,210 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:38:17,210 DEBUG:< Upgrade: websocket
+2024-12-04 19:38:17,210 DEBUG:< Connection: Upgrade
+2024-12-04 19:38:17,210 DEBUG:< Sec-WebSocket-Key: w5qbHuPhOy0dw9VY+bNsRw==
+2024-12-04 19:38:17,210 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:38:17,211 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:38:17,211 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:38:17,212 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:38:17,212 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:38:17,212 DEBUG:> Date: Wed, 04 Dec 2024 14:38:17 GMT
+2024-12-04 19:38:17,212 DEBUG:> Upgrade: websocket
+2024-12-04 19:38:17,212 DEBUG:> Connection: Upgrade
+2024-12-04 19:38:17,212 DEBUG:> Sec-WebSocket-Accept: nTqGS8Gxq003yabh3lLQuRzsmqA=
+2024-12-04 19:38:17,212 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:38:17,213 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:38:17,213 DEBUG:= connection is OPEN
+2024-12-04 19:38:17,213 INFO:connection open
+2024-12-04 19:38:17,213 INFO:Connection received from client.
+2024-12-04 19:38:25,910 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [60884 bytes]
+2024-12-04 19:38:25,910 DEBUG:Received 60884 bytes of data from client.
+2024-12-04 19:38:25,910 INFO:Preprocessing image...
+2024-12-04 19:38:25,914 DEBUG:Opening image...
+2024-12-04 19:38:25,914 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:38:25,914 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:38:25,921 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:38:25,921 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:38:25,921 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:38:25,923 DEBUG:Image opened successfully.
+2024-12-04 19:38:25,926 DEBUG:Image transformed into tensor.
+2024-12-04 19:38:25,927 INFO:Image preprocessed successfully.
+2024-12-04 19:38:25,927 INFO:Running model inference...
+2024-12-04 19:38:26,203 INFO:Model inference completed.
+2024-12-04 19:38:26,203 DEBUG:Confidence score: 0.0003495140699669719
+2024-12-04 19:38:26,203 INFO:Predicted class: volvov50 2002
+2024-12-04 19:38:26,203 DEBUG:> TEXT '"volvov50 2002"' [15 bytes]
+2024-12-04 19:38:26,203 INFO:Response sent to client.
+2024-12-04 19:38:26,203 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:38:26,203 DEBUG:= connection is CLOSING
+2024-12-04 19:38:26,264 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:38:26,264 DEBUG:> EOF
+2024-12-04 19:38:26,264 DEBUG:x half-closing TCP connection
+2024-12-04 19:38:26,264 DEBUG:< EOF
+2024-12-04 19:38:26,264 DEBUG:= connection is CLOSED
+2024-12-04 19:45:07,768 DEBUG:= connection is CONNECTING
+2024-12-04 19:45:07,768 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:45:07,768 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:45:07,769 DEBUG:< Accept: */*
+2024-12-04 19:45:07,769 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:45:07,769 DEBUG:< Upgrade: websocket
+2024-12-04 19:45:07,769 DEBUG:< Connection: Upgrade
+2024-12-04 19:45:07,769 DEBUG:< Sec-WebSocket-Key: Fx5qSow17MISilGhJX8yEw==
+2024-12-04 19:45:07,769 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:45:07,769 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:45:07,769 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:45:07,769 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:45:07,769 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:45:07,769 DEBUG:> Date: Wed, 04 Dec 2024 14:45:07 GMT
+2024-12-04 19:45:07,769 DEBUG:> Upgrade: websocket
+2024-12-04 19:45:07,769 DEBUG:> Connection: Upgrade
+2024-12-04 19:45:07,769 DEBUG:> Sec-WebSocket-Accept: SJ8OwWco4cerpCPw2y2RJHrfnp0=
+2024-12-04 19:45:07,769 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:45:07,769 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:45:07,769 DEBUG:= connection is OPEN
+2024-12-04 19:45:07,769 INFO:connection open
+2024-12-04 19:45:07,769 INFO:Connection received from client.
+2024-12-04 19:45:11,472 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [54431 bytes]
+2024-12-04 19:45:11,472 DEBUG:Received 54431 bytes of data from client.
+2024-12-04 19:45:11,472 INFO:Preprocessing image...
+2024-12-04 19:45:11,472 DEBUG:Opening image...
+2024-12-04 19:45:11,472 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:45:11,472 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:45:11,472 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:45:11,472 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:45:11,472 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:45:11,475 DEBUG:Image opened successfully.
+2024-12-04 19:45:11,477 DEBUG:Image transformed into tensor.
+2024-12-04 19:45:11,477 INFO:Image preprocessed successfully.
+2024-12-04 19:45:11,477 INFO:Running model inference...
+2024-12-04 19:45:11,488 INFO:Model inference completed.
+2024-12-04 19:45:11,519 DEBUG:Confidence score: 0.00031432000105269253
+2024-12-04 19:45:11,519 INFO:Predicted class: chevroletcheyenne 1988
+2024-12-04 19:45:11,519 DEBUG:> TEXT '"chevroletcheyenne 1988"' [24 bytes]
+2024-12-04 19:45:11,519 INFO:Response sent to client.
+2024-12-04 19:45:11,519 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:45:11,519 DEBUG:= connection is CLOSING
+2024-12-04 19:45:11,676 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:45:11,676 DEBUG:> EOF
+2024-12-04 19:45:11,676 DEBUG:x half-closing TCP connection
+2024-12-04 19:45:11,676 DEBUG:< EOF
+2024-12-04 19:45:11,676 DEBUG:= connection is CLOSED
+2024-12-04 19:47:28,530 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:47:28,530 INFO:9170 class names loaded.
+2024-12-04 19:47:28,935 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:47:29,147 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:47:29,251 INFO:Model state dict loaded.
+2024-12-04 19:47:29,339 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:47:29,376 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:47:29,381 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:47:29,381 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:47:29,387 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:47:29,387 INFO:Server started and waiting for connections...
+2024-12-04 19:47:29,387 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:48:30,757 DEBUG:= connection is CONNECTING
+2024-12-04 19:48:30,757 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:48:30,757 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:48:30,757 DEBUG:< Accept: */*
+2024-12-04 19:48:30,757 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:48:30,757 DEBUG:< Upgrade: websocket
+2024-12-04 19:48:30,757 DEBUG:< Connection: Upgrade
+2024-12-04 19:48:30,757 DEBUG:< Sec-WebSocket-Key: YWhnkNlQNekOOlz/yT71cA==
+2024-12-04 19:48:30,757 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:48:30,757 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:48:30,757 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:48:30,757 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:48:30,769 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:48:30,769 DEBUG:> Date: Wed, 04 Dec 2024 14:48:30 GMT
+2024-12-04 19:48:30,769 DEBUG:> Upgrade: websocket
+2024-12-04 19:48:30,769 DEBUG:> Connection: Upgrade
+2024-12-04 19:48:30,769 DEBUG:> Sec-WebSocket-Accept: GIMMfbqgZnLvDwBy83vAAIG2hrU=
+2024-12-04 19:48:30,770 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:48:30,770 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:48:30,770 DEBUG:= connection is OPEN
+2024-12-04 19:48:30,770 INFO:connection open
+2024-12-04 19:48:30,771 INFO:Connection received from client.
+2024-12-04 19:48:40,313 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [62626 bytes]
+2024-12-04 19:48:40,313 DEBUG:Received 62626 bytes of data from client.
+2024-12-04 19:48:40,313 INFO:Preprocessing image...
+2024-12-04 19:48:40,313 DEBUG:Opening image...
+2024-12-04 19:48:40,329 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:48:40,329 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:48:40,329 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:48:40,329 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:48:40,329 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:48:40,332 DEBUG:Image opened successfully.
+2024-12-04 19:48:40,335 DEBUG:Image transformed into tensor.
+2024-12-04 19:48:40,336 INFO:Image preprocessed successfully.
+2024-12-04 19:48:40,336 INFO:Running model inference...
+2024-12-04 19:48:40,610 INFO:Model inference completed.
+2024-12-04 19:48:40,610 DEBUG:Confidence score: 0.00040098020690493286
+2024-12-04 19:48:40,610 INFO:Confidence below threshold; sending empty response.
+2024-12-04 19:48:40,610 DEBUG:> TEXT '' [0 bytes]
+2024-12-04 19:48:40,610 INFO:Response sent to client.
+2024-12-04 19:48:40,610 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:48:40,610 DEBUG:= connection is CLOSING
+2024-12-04 19:48:40,675 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:48:40,675 DEBUG:> EOF
+2024-12-04 19:48:40,675 DEBUG:x half-closing TCP connection
+2024-12-04 19:48:40,675 DEBUG:< EOF
+2024-12-04 19:48:40,675 DEBUG:= connection is CLOSED
+2024-12-04 19:49:03,370 INFO:Loading class names from ./car_class_names.txt...
+2024-12-04 19:49:03,372 INFO:9170 class names loaded.
+2024-12-04 19:49:03,781 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:49:03,974 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:49:04,081 INFO:Model state dict loaded.
+2024-12-04 19:49:04,170 INFO:Adjusted model to 9170 classes.
+2024-12-04 19:49:04,223 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:49:04,223 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:49:04,223 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:49:04,236 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:49:04,236 INFO:Server started and waiting for connections...
+2024-12-04 19:49:04,237 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 19:49:48,227 DEBUG:= connection is CONNECTING
+2024-12-04 19:49:48,239 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:49:48,239 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:49:48,239 DEBUG:< Accept: */*
+2024-12-04 19:49:48,240 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:49:48,240 DEBUG:< Upgrade: websocket
+2024-12-04 19:49:48,240 DEBUG:< Connection: Upgrade
+2024-12-04 19:49:48,241 DEBUG:< Sec-WebSocket-Key: O7A+ZxeYeUqO/j384rFrgQ==
+2024-12-04 19:49:48,241 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:49:48,241 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:49:48,241 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:49:48,241 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:49:48,242 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:49:48,242 DEBUG:> Date: Wed, 04 Dec 2024 14:49:48 GMT
+2024-12-04 19:49:48,242 DEBUG:> Upgrade: websocket
+2024-12-04 19:49:48,242 DEBUG:> Connection: Upgrade
+2024-12-04 19:49:48,242 DEBUG:> Sec-WebSocket-Accept: 4hYuzuoY+EpoBAVqvL9XkfLZZEY=
+2024-12-04 19:49:48,242 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:49:48,243 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:49:48,243 DEBUG:= connection is OPEN
+2024-12-04 19:49:48,243 INFO:connection open
+2024-12-04 19:49:48,243 INFO:Connection received from client.
+2024-12-04 19:49:53,765 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [60836 bytes]
+2024-12-04 19:49:53,765 DEBUG:Received 60836 bytes of data from client.
+2024-12-04 19:49:53,765 INFO:Preprocessing image...
+2024-12-04 19:49:53,765 DEBUG:Opening image...
+2024-12-04 19:49:53,781 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:49:53,782 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:49:53,782 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:49:53,782 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:49:53,782 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:49:53,783 DEBUG:Image opened successfully.
+2024-12-04 19:49:53,786 DEBUG:Image transformed into tensor.
+2024-12-04 19:49:53,787 INFO:Image preprocessed successfully.
+2024-12-04 19:49:53,787 INFO:Running model inference...
+2024-12-04 19:49:54,079 INFO:Model inference completed.
+2024-12-04 19:49:54,079 DEBUG:Confidence score: 0.0003361230774316937
+2024-12-04 19:49:54,079 INFO:Predicted class: vue 2008 saturn
+2024-12-04 19:49:54,079 DEBUG:> TEXT 'vue 2008 saturn' [15 bytes]
+2024-12-04 19:49:54,079 INFO:Response sent to client.
+2024-12-04 19:49:54,079 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:49:54,079 DEBUG:= connection is CLOSING
+2024-12-04 19:49:54,221 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:49:54,221 DEBUG:> EOF
+2024-12-04 19:49:54,221 DEBUG:x half-closing TCP connection
+2024-12-04 19:49:54,221 DEBUG:< EOF
+2024-12-04 19:49:54,221 DEBUG:= connection is CLOSED
+2024-12-04 19:50:59,440 DEBUG:= connection is CONNECTING
+2024-12-04 19:50:59,471 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:50:59,471 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:50:59,471 DEBUG:< Accept: */*
+2024-12-04 19:50:59,471 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:50:59,471 DEBUG:< Upgrade: websocket
+2024-12-04 19:50:59,471 DEBUG:< Connection: Upgrade
+2024-12-04 19:50:59,471 DEBUG:< Sec-WebSocket-Key: HWA8KqH3PlED0KoJon9NnQ==
+2024-12-04 19:50:59,471 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:50:59,471 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:50:59,471 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:50:59,471 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:50:59,471 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:50:59,471 DEBUG:> Date: Wed, 04 Dec 2024 14:50:59 GMT
+2024-12-04 19:50:59,471 DEBUG:> Upgrade: websocket
+2024-12-04 19:50:59,471 DEBUG:> Connection: Upgrade
+2024-12-04 19:50:59,471 DEBUG:> Sec-WebSocket-Accept: B1o6vYvIgTv4NFVTM0GJT9uZHLg=
+2024-12-04 19:50:59,471 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:50:59,471 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:50:59,471 DEBUG:= connection is OPEN
+2024-12-04 19:50:59,471 INFO:connection open
+2024-12-04 19:50:59,471 INFO:Connection received from client.
+2024-12-04 19:51:05,157 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [61631 bytes]
+2024-12-04 19:51:05,157 DEBUG:Received 61631 bytes of data from client.
+2024-12-04 19:51:05,157 INFO:Preprocessing image...
+2024-12-04 19:51:05,157 DEBUG:Opening image...
+2024-12-04 19:51:05,157 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:51:05,157 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:51:05,157 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:51:05,157 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:51:05,157 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:51:05,167 DEBUG:Image opened successfully.
+2024-12-04 19:51:05,169 DEBUG:Image transformed into tensor.
+2024-12-04 19:51:05,169 INFO:Image preprocessed successfully.
+2024-12-04 19:51:05,169 INFO:Running model inference...
+2024-12-04 19:51:05,185 INFO:Model inference completed.
+2024-12-04 19:51:05,214 DEBUG:Confidence score: 0.00036226847441866994
+2024-12-04 19:51:05,214 INFO:Predicted class: yukon 1991 chevrolet
+2024-12-04 19:51:05,214 DEBUG:> TEXT 'yukon 1991 chevrolet' [20 bytes]
+2024-12-04 19:51:05,214 INFO:Response sent to client.
+2024-12-04 19:51:05,214 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:51:05,214 DEBUG:= connection is CLOSING
+2024-12-04 19:51:05,263 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:51:05,263 DEBUG:> EOF
+2024-12-04 19:51:05,263 DEBUG:x half-closing TCP connection
+2024-12-04 19:51:05,263 DEBUG:< EOF
+2024-12-04 19:51:05,263 DEBUG:= connection is CLOSED
+2024-12-04 19:52:02,107 DEBUG:= connection is CONNECTING
+2024-12-04 19:52:02,114 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:52:02,114 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:52:02,114 DEBUG:< Accept: */*
+2024-12-04 19:52:02,114 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:52:02,114 DEBUG:< Upgrade: websocket
+2024-12-04 19:52:02,118 DEBUG:< Connection: Upgrade
+2024-12-04 19:52:02,118 DEBUG:< Sec-WebSocket-Key: XhRAKMof+AU3yNDd9hwVfw==
+2024-12-04 19:52:02,118 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:52:02,118 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:52:02,118 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:52:02,118 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:52:02,119 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:52:02,119 DEBUG:> Date: Wed, 04 Dec 2024 14:52:02 GMT
+2024-12-04 19:52:02,119 DEBUG:> Upgrade: websocket
+2024-12-04 19:52:02,119 DEBUG:> Connection: Upgrade
+2024-12-04 19:52:02,119 DEBUG:> Sec-WebSocket-Accept: KBsXJvi8GVMXu1Eucsx4RY5Rwdg=
+2024-12-04 19:52:02,119 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:52:02,119 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:52:02,119 DEBUG:= connection is OPEN
+2024-12-04 19:52:02,119 INFO:connection open
+2024-12-04 19:52:02,119 INFO:Connection received from client.
+2024-12-04 19:52:11,183 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [61405 bytes]
+2024-12-04 19:52:11,183 DEBUG:Received 61405 bytes of data from client.
+2024-12-04 19:52:11,183 INFO:Preprocessing image...
+2024-12-04 19:52:11,183 DEBUG:Opening image...
+2024-12-04 19:52:11,183 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:52:11,183 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:52:11,183 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:52:11,183 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:52:11,183 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:52:11,185 DEBUG:Image opened successfully.
+2024-12-04 19:52:11,186 DEBUG:Image transformed into tensor.
+2024-12-04 19:52:11,186 INFO:Image preprocessed successfully.
+2024-12-04 19:52:11,186 INFO:Running model inference...
+2024-12-04 19:52:11,195 INFO:Model inference completed.
+2024-12-04 19:52:11,232 DEBUG:Confidence score: 0.00038976932410150766
+2024-12-04 19:52:11,232 INFO:Predicted class: vue 2008 saturn
+2024-12-04 19:52:11,232 DEBUG:> TEXT 'vue 2008 saturn' [15 bytes]
+2024-12-04 19:52:11,232 INFO:Response sent to client.
+2024-12-04 19:52:11,232 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:52:11,232 DEBUG:= connection is CLOSING
+2024-12-04 19:52:11,307 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:52:11,307 DEBUG:> EOF
+2024-12-04 19:52:11,307 DEBUG:x half-closing TCP connection
+2024-12-04 19:52:11,307 DEBUG:< EOF
+2024-12-04 19:52:11,307 DEBUG:= connection is CLOSED
+2024-12-04 19:53:49,748 DEBUG:= connection is CONNECTING
+2024-12-04 19:53:49,750 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:53:49,750 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:53:49,751 DEBUG:< Accept: */*
+2024-12-04 19:53:49,751 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:53:49,751 DEBUG:< Upgrade: websocket
+2024-12-04 19:53:49,751 DEBUG:< Connection: Upgrade
+2024-12-04 19:53:49,751 DEBUG:< Sec-WebSocket-Key: nkF0G8tqOp5VoYUB9WyB6Q==
+2024-12-04 19:53:49,751 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:53:49,751 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:53:49,752 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:53:49,752 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:53:49,752 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:53:49,752 DEBUG:> Date: Wed, 04 Dec 2024 14:53:49 GMT
+2024-12-04 19:53:49,752 DEBUG:> Upgrade: websocket
+2024-12-04 19:53:49,753 DEBUG:> Connection: Upgrade
+2024-12-04 19:53:49,753 DEBUG:> Sec-WebSocket-Accept: Xms3LKe6Np4vj+HUDEvcFqNQQ9A=
+2024-12-04 19:53:49,753 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:53:49,753 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:53:49,753 DEBUG:= connection is OPEN
+2024-12-04 19:53:49,753 INFO:connection open
+2024-12-04 19:53:49,754 INFO:Connection received from client.
+2024-12-04 19:53:57,936 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [58559 bytes]
+2024-12-04 19:53:57,936 DEBUG:Received 58559 bytes of data from client.
+2024-12-04 19:53:57,936 INFO:Preprocessing image...
+2024-12-04 19:53:57,936 DEBUG:Opening image...
+2024-12-04 19:53:57,936 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:53:57,936 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:53:57,936 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:53:57,936 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:53:57,936 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:53:57,945 DEBUG:Image opened successfully.
+2024-12-04 19:53:57,945 DEBUG:Image transformed into tensor.
+2024-12-04 19:53:57,945 INFO:Image preprocessed successfully.
+2024-12-04 19:53:57,945 INFO:Running model inference...
+2024-12-04 19:53:57,958 INFO:Model inference completed.
+2024-12-04 19:53:57,983 DEBUG:Confidence score: 0.0005444621783681214
+2024-12-04 19:53:57,983 INFO:Predicted class: 442 1972 oldsmobile
+2024-12-04 19:53:57,983 DEBUG:> TEXT '442 1972 oldsmobile' [19 bytes]
+2024-12-04 19:53:57,983 INFO:Response sent to client.
+2024-12-04 19:53:57,983 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:53:57,983 DEBUG:= connection is CLOSING
+2024-12-04 19:53:58,107 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:53:58,107 DEBUG:> EOF
+2024-12-04 19:53:58,107 DEBUG:x half-closing TCP connection
+2024-12-04 19:53:58,123 DEBUG:< EOF
+2024-12-04 19:53:58,123 DEBUG:= connection is CLOSED
+2024-12-04 19:54:19,887 DEBUG:= connection is CONNECTING
+2024-12-04 19:54:19,887 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:54:19,887 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:54:19,887 DEBUG:< Accept: */*
+2024-12-04 19:54:19,887 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:54:19,887 DEBUG:< Upgrade: websocket
+2024-12-04 19:54:19,887 DEBUG:< Connection: Upgrade
+2024-12-04 19:54:19,887 DEBUG:< Sec-WebSocket-Key: tVebFwGDv3AaM1Og+TjjDw==
+2024-12-04 19:54:19,887 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:54:19,887 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:54:19,887 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:54:19,887 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:54:19,887 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:54:19,887 DEBUG:> Date: Wed, 04 Dec 2024 14:54:19 GMT
+2024-12-04 19:54:19,887 DEBUG:> Upgrade: websocket
+2024-12-04 19:54:19,887 DEBUG:> Connection: Upgrade
+2024-12-04 19:54:19,887 DEBUG:> Sec-WebSocket-Accept: 16x2Lx7vV2be4Xa17ca8DB5zxAs=
+2024-12-04 19:54:19,887 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:54:19,887 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:54:19,887 DEBUG:= connection is OPEN
+2024-12-04 19:54:19,887 INFO:connection open
+2024-12-04 19:54:19,887 INFO:Connection received from client.
+2024-12-04 19:54:26,574 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [54976 bytes]
+2024-12-04 19:54:26,574 DEBUG:Received 54976 bytes of data from client.
+2024-12-04 19:54:26,582 INFO:Preprocessing image...
+2024-12-04 19:54:26,582 DEBUG:Opening image...
+2024-12-04 19:54:26,582 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:54:26,583 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:54:26,583 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:54:26,583 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:54:26,583 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:54:26,584 DEBUG:Image opened successfully.
+2024-12-04 19:54:26,584 DEBUG:Image transformed into tensor.
+2024-12-04 19:54:26,584 INFO:Image preprocessed successfully.
+2024-12-04 19:54:26,584 INFO:Running model inference...
+2024-12-04 19:54:26,597 INFO:Model inference completed.
+2024-12-04 19:54:26,632 DEBUG:Confidence score: 0.00045987035264261067
+2024-12-04 19:54:26,632 INFO:Predicted class: sonoma 2006 gmc
+2024-12-04 19:54:26,632 DEBUG:> TEXT 'sonoma 2006 gmc' [15 bytes]
+2024-12-04 19:54:26,632 INFO:Response sent to client.
+2024-12-04 19:54:26,632 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:54:26,634 DEBUG:= connection is CLOSING
+2024-12-04 19:54:26,874 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:54:26,874 DEBUG:> EOF
+2024-12-04 19:54:26,874 DEBUG:x half-closing TCP connection
+2024-12-04 19:54:26,874 DEBUG:< EOF
+2024-12-04 19:54:26,874 DEBUG:= connection is CLOSED
+2024-12-04 19:55:01,534 DEBUG:= connection is CONNECTING
+2024-12-04 19:55:01,544 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:55:01,544 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:55:01,544 DEBUG:< Accept: */*
+2024-12-04 19:55:01,544 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:55:01,544 DEBUG:< Upgrade: websocket
+2024-12-04 19:55:01,544 DEBUG:< Connection: Upgrade
+2024-12-04 19:55:01,544 DEBUG:< Sec-WebSocket-Key: WFFMZXKagHzjwvXVb9Y3lA==
+2024-12-04 19:55:01,544 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:55:01,548 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:55:01,548 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:55:01,548 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:55:01,548 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:55:01,548 DEBUG:> Date: Wed, 04 Dec 2024 14:55:01 GMT
+2024-12-04 19:55:01,548 DEBUG:> Upgrade: websocket
+2024-12-04 19:55:01,548 DEBUG:> Connection: Upgrade
+2024-12-04 19:55:01,548 DEBUG:> Sec-WebSocket-Accept: sNU1PLMXxD1T1vTDCgd1AD1Dqz8=
+2024-12-04 19:55:01,548 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:55:01,548 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:55:01,548 DEBUG:= connection is OPEN
+2024-12-04 19:55:01,550 INFO:connection open
+2024-12-04 19:55:01,550 INFO:Connection received from client.
+2024-12-04 19:55:07,355 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [62157 bytes]
+2024-12-04 19:55:07,355 DEBUG:Received 62157 bytes of data from client.
+2024-12-04 19:55:07,355 INFO:Preprocessing image...
+2024-12-04 19:55:07,355 DEBUG:Opening image...
+2024-12-04 19:55:07,355 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:55:07,355 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:55:07,371 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:55:07,371 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:55:07,371 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:55:07,371 DEBUG:Image opened successfully.
+2024-12-04 19:55:07,371 DEBUG:Image transformed into tensor.
+2024-12-04 19:55:07,371 INFO:Image preprocessed successfully.
+2024-12-04 19:55:07,371 INFO:Running model inference...
+2024-12-04 19:55:07,386 INFO:Model inference completed.
+2024-12-04 19:55:07,418 DEBUG:Confidence score: 0.0005430279416032135
+2024-12-04 19:55:07,418 INFO:Predicted class: mkt 2010 lincoln
+2024-12-04 19:55:07,418 DEBUG:> TEXT 'mkt 2010 lincoln' [16 bytes]
+2024-12-04 19:55:07,418 INFO:Response sent to client.
+2024-12-04 19:55:07,418 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:55:07,418 DEBUG:= connection is CLOSING
+2024-12-04 19:55:07,576 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:55:07,576 DEBUG:> EOF
+2024-12-04 19:55:07,576 DEBUG:x half-closing TCP connection
+2024-12-04 19:55:07,591 DEBUG:< EOF
+2024-12-04 19:55:07,591 DEBUG:= connection is CLOSED
+2024-12-04 19:58:22,306 DEBUG:= connection is CONNECTING
+2024-12-04 19:58:22,311 DEBUG:< GET / HTTP/1.1
+2024-12-04 19:58:22,311 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 19:58:22,311 DEBUG:< Accept: */*
+2024-12-04 19:58:22,311 DEBUG:< User-Agent: ktor-client
+2024-12-04 19:58:22,311 DEBUG:< Upgrade: websocket
+2024-12-04 19:58:22,312 DEBUG:< Connection: Upgrade
+2024-12-04 19:58:22,312 DEBUG:< Sec-WebSocket-Key: RnHFcRq7u41yErKfRT7BTA==
+2024-12-04 19:58:22,312 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 19:58:22,312 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 19:58:22,312 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 19:58:22,312 DEBUG:< Accept-Encoding: gzip
+2024-12-04 19:58:22,312 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 19:58:22,313 DEBUG:> Date: Wed, 04 Dec 2024 14:58:22 GMT
+2024-12-04 19:58:22,313 DEBUG:> Upgrade: websocket
+2024-12-04 19:58:22,313 DEBUG:> Connection: Upgrade
+2024-12-04 19:58:22,313 DEBUG:> Sec-WebSocket-Accept: BheBJpakDeXGHLThzn0vF/G50YM=
+2024-12-04 19:58:22,313 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 19:58:22,313 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 19:58:22,313 DEBUG:= connection is OPEN
+2024-12-04 19:58:22,314 INFO:connection open
+2024-12-04 19:58:22,314 INFO:Connection received from client.
+2024-12-04 19:58:28,999 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [55304 bytes]
+2024-12-04 19:58:28,999 DEBUG:Received 55304 bytes of data from client.
+2024-12-04 19:58:28,999 INFO:Preprocessing image...
+2024-12-04 19:58:29,000 DEBUG:Opening image...
+2024-12-04 19:58:29,000 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 19:58:29,000 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 19:58:29,000 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 19:58:29,000 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 19:58:29,000 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 19:58:29,001 DEBUG:Image opened successfully.
+2024-12-04 19:58:29,004 DEBUG:Image transformed into tensor.
+2024-12-04 19:58:29,005 INFO:Image preprocessed successfully.
+2024-12-04 19:58:29,005 INFO:Running model inference...
+2024-12-04 19:58:29,016 INFO:Model inference completed.
+2024-12-04 19:58:29,050 DEBUG:Confidence score: 0.0005365897668525577
+2024-12-04 19:58:29,050 INFO:Predicted class: 442 1972 oldsmobile
+2024-12-04 19:58:29,050 DEBUG:> TEXT '442 1972 oldsmobile' [19 bytes]
+2024-12-04 19:58:29,050 INFO:Response sent to client.
+2024-12-04 19:58:29,050 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:58:29,051 DEBUG:= connection is CLOSING
+2024-12-04 19:58:29,193 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 19:58:29,194 DEBUG:> EOF
+2024-12-04 19:58:29,194 DEBUG:x half-closing TCP connection
+2024-12-04 19:58:29,194 DEBUG:< EOF
+2024-12-04 19:58:29,194 DEBUG:= connection is CLOSED
+2024-12-04 19:59:40,646 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 19:59:40,648 INFO:9169 class names loaded.
+2024-12-04 19:59:41,039 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 19:59:41,250 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 19:59:41,366 INFO:Model state dict loaded.
+2024-12-04 19:59:41,366 INFO:Model's output layer matches the number of classes.
+2024-12-04 19:59:41,417 INFO:Model loaded and set to evaluation mode.
+2024-12-04 19:59:41,417 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 19:59:41,417 DEBUG:Using proactor: IocpProactor
+2024-12-04 19:59:41,428 INFO:server listening on 172.20.10.11:8765
+2024-12-04 19:59:41,429 INFO:Server started and waiting for connections...
+2024-12-04 19:59:41,429 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 20:00:01,995 DEBUG:= connection is CONNECTING
+2024-12-04 20:00:01,995 DEBUG:< GET / HTTP/1.1
+2024-12-04 20:00:01,995 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 20:00:01,995 DEBUG:< Accept: */*
+2024-12-04 20:00:01,995 DEBUG:< User-Agent: ktor-client
+2024-12-04 20:00:02,009 DEBUG:< Upgrade: websocket
+2024-12-04 20:00:02,009 DEBUG:< Connection: Upgrade
+2024-12-04 20:00:02,009 DEBUG:< Sec-WebSocket-Key: X1+Zrqww7nDXtdk91BwRMQ==
+2024-12-04 20:00:02,010 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 20:00:02,010 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 20:00:02,010 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 20:00:02,010 DEBUG:< Accept-Encoding: gzip
+2024-12-04 20:00:02,011 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 20:00:02,011 DEBUG:> Date: Wed, 04 Dec 2024 15:00:02 GMT
+2024-12-04 20:00:02,011 DEBUG:> Upgrade: websocket
+2024-12-04 20:00:02,011 DEBUG:> Connection: Upgrade
+2024-12-04 20:00:02,012 DEBUG:> Sec-WebSocket-Accept: 1t4bOZMudis/XvyHWWnMic07gZk=
+2024-12-04 20:00:02,012 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 20:00:02,012 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 20:00:02,012 DEBUG:= connection is OPEN
+2024-12-04 20:00:02,012 INFO:connection open
+2024-12-04 20:00:02,012 INFO:Connection received from client.
+2024-12-04 20:00:07,251 DEBUG:< EOF
+2024-12-04 20:00:07,251 DEBUG:> EOF
+2024-12-04 20:00:07,251 DEBUG:< EOF
+2024-12-04 20:00:07,251 DEBUG:= connection is CLOSED
+2024-12-04 20:00:07,251 DEBUG:x half-closing TCP connection
+2024-12-04 20:00:07,251 WARNING:Client disconnected before sending data: no close frame received or sent
+2024-12-04 20:00:21,484 DEBUG:= connection is CONNECTING
+2024-12-04 20:00:21,485 DEBUG:< GET / HTTP/1.1
+2024-12-04 20:00:21,485 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 20:00:21,485 DEBUG:< Accept: */*
+2024-12-04 20:00:21,485 DEBUG:< User-Agent: ktor-client
+2024-12-04 20:00:21,485 DEBUG:< Upgrade: websocket
+2024-12-04 20:00:21,485 DEBUG:< Connection: Upgrade
+2024-12-04 20:00:21,485 DEBUG:< Sec-WebSocket-Key: KQLF+jBbDjQCOT0lUHYRlA==
+2024-12-04 20:00:21,485 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 20:00:21,485 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 20:00:21,485 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 20:00:21,485 DEBUG:< Accept-Encoding: gzip
+2024-12-04 20:00:21,485 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 20:00:21,485 DEBUG:> Date: Wed, 04 Dec 2024 15:00:21 GMT
+2024-12-04 20:00:21,485 DEBUG:> Upgrade: websocket
+2024-12-04 20:00:21,485 DEBUG:> Connection: Upgrade
+2024-12-04 20:00:21,485 DEBUG:> Sec-WebSocket-Accept: vKrXRnfEbX12tfgtKSKaOgGtkZg=
+2024-12-04 20:00:21,485 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 20:00:21,485 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 20:00:21,485 DEBUG:= connection is OPEN
+2024-12-04 20:00:21,490 INFO:connection open
+2024-12-04 20:00:21,490 INFO:Connection received from client.
+2024-12-04 20:00:26,095 DEBUG:> CLOSE 1009 (message too big) frame with 7668502 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 20:00:26,095 DEBUG:= connection is CLOSING
+2024-12-04 20:00:26,095 DEBUG:> EOF
+2024-12-04 20:00:26,095 DEBUG:x half-closing TCP connection
+2024-12-04 20:00:27,984 DEBUG:< EOF
+2024-12-04 20:00:27,984 DEBUG:= connection is CLOSED
+2024-12-04 20:00:27,984 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 7668502 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 20:01:26,215 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 20:01:26,215 INFO:9169 class names loaded.
+2024-12-04 20:01:26,607 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 20:01:26,807 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 20:01:26,923 INFO:Model state dict loaded.
+2024-12-04 20:01:26,923 INFO:Model's output layer matches the number of classes.
+2024-12-04 20:01:26,965 INFO:Model loaded and set to evaluation mode.
+2024-12-04 20:01:26,966 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 20:01:26,966 DEBUG:Using proactor: IocpProactor
+2024-12-04 20:01:26,975 INFO:server listening on 172.20.10.11:8765
+2024-12-04 20:01:26,975 INFO:Server started and waiting for connections...
+2024-12-04 20:01:26,975 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 20:02:09,914 DEBUG:= connection is CONNECTING
+2024-12-04 20:02:09,916 DEBUG:< GET / HTTP/1.1
+2024-12-04 20:02:09,916 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 20:02:09,916 DEBUG:< Accept: */*
+2024-12-04 20:02:09,916 DEBUG:< User-Agent: ktor-client
+2024-12-04 20:02:09,923 DEBUG:< Upgrade: websocket
+2024-12-04 20:02:09,923 DEBUG:< Connection: Upgrade
+2024-12-04 20:02:09,923 DEBUG:< Sec-WebSocket-Key: 4RPXPpiYmxZY+YUJVHMKUQ==
+2024-12-04 20:02:09,923 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 20:02:09,924 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 20:02:09,924 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 20:02:09,924 DEBUG:< Accept-Encoding: gzip
+2024-12-04 20:02:09,924 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 20:02:09,924 DEBUG:> Date: Wed, 04 Dec 2024 15:02:09 GMT
+2024-12-04 20:02:09,924 DEBUG:> Upgrade: websocket
+2024-12-04 20:02:09,925 DEBUG:> Connection: Upgrade
+2024-12-04 20:02:09,925 DEBUG:> Sec-WebSocket-Accept: V92FsL9P9ix3EojYu1y1I0OfBo0=
+2024-12-04 20:02:09,925 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 20:02:09,925 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 20:02:09,925 DEBUG:= connection is OPEN
+2024-12-04 20:02:09,925 INFO:connection open
+2024-12-04 20:02:09,926 INFO:Connection received from client.
+2024-12-04 20:02:14,251 DEBUG:> CLOSE 1009 (message too big) frame with 7668502 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 20:02:14,251 DEBUG:= connection is CLOSING
+2024-12-04 20:02:14,251 DEBUG:> EOF
+2024-12-04 20:02:14,251 DEBUG:x half-closing TCP connection
+2024-12-04 20:02:16,274 DEBUG:< EOF
+2024-12-04 20:02:16,274 DEBUG:= connection is CLOSED
+2024-12-04 20:02:16,274 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 7668502 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 20:04:01,223 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 20:04:01,226 INFO:9169 class names loaded.
+2024-12-04 20:04:01,623 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 20:04:01,828 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 20:04:01,934 INFO:Model state dict loaded.
+2024-12-04 20:04:01,934 INFO:Model's output layer matches the number of classes.
+2024-12-04 20:04:01,986 INFO:Model loaded and set to evaluation mode.
+2024-12-04 20:04:01,987 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 20:04:01,987 DEBUG:Using proactor: IocpProactor
+2024-12-04 20:04:01,996 INFO:server listening on 172.20.10.11:8765
+2024-12-04 20:04:01,996 INFO:Server started and waiting for connections...
+2024-12-04 20:04:01,996 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 20:04:29,479 DEBUG:= connection is CONNECTING
+2024-12-04 20:04:29,496 DEBUG:< GET / HTTP/1.1
+2024-12-04 20:04:29,497 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 20:04:29,497 DEBUG:< Accept: */*
+2024-12-04 20:04:29,497 DEBUG:< User-Agent: ktor-client
+2024-12-04 20:04:29,497 DEBUG:< Upgrade: websocket
+2024-12-04 20:04:29,497 DEBUG:< Connection: Upgrade
+2024-12-04 20:04:29,497 DEBUG:< Sec-WebSocket-Key: BgRaLj0D/JDegs/+ObxblQ==
+2024-12-04 20:04:29,497 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 20:04:29,497 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 20:04:29,497 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 20:04:29,498 DEBUG:< Accept-Encoding: gzip
+2024-12-04 20:04:29,498 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 20:04:29,498 DEBUG:> Date: Wed, 04 Dec 2024 15:04:29 GMT
+2024-12-04 20:04:29,498 DEBUG:> Upgrade: websocket
+2024-12-04 20:04:29,498 DEBUG:> Connection: Upgrade
+2024-12-04 20:04:29,498 DEBUG:> Sec-WebSocket-Accept: EeKywBzVwUQNqfQT6sWNi4UPjhE=
+2024-12-04 20:04:29,498 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 20:04:29,498 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 20:04:29,498 DEBUG:= connection is OPEN
+2024-12-04 20:04:29,498 INFO:connection open
+2024-12-04 20:04:29,498 ERROR:connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\asyncio\server.py", line 373, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.<lambda>() missing 1 required positional argument: 'path'
+2024-12-04 20:04:29,499 DEBUG:> CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 20:04:29,500 DEBUG:= connection is CLOSING
+2024-12-04 20:04:29,571 DEBUG:< CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 20:04:29,585 DEBUG:> EOF
+2024-12-04 20:04:29,585 DEBUG:x half-closing TCP connection
+2024-12-04 20:04:29,585 DEBUG:< EOF
+2024-12-04 20:04:29,585 DEBUG:= connection is CLOSED
+2024-12-04 20:06:17,464 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 20:06:17,479 INFO:9169 class names loaded.
+2024-12-04 20:06:17,855 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 20:06:18,083 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 20:06:18,192 INFO:Model state dict loaded.
+2024-12-04 20:06:18,193 INFO:Model's output layer matches the number of classes.
+2024-12-04 20:06:18,229 INFO:Model loaded and set to evaluation mode.
+2024-12-04 20:06:18,229 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 20:06:18,229 DEBUG:Using proactor: IocpProactor
+2024-12-04 20:06:18,241 INFO:server listening on 172.20.10.11:8765
+2024-12-04 20:06:18,242 INFO:Server started and waiting for connections...
+2024-12-04 20:06:18,242 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 20:07:18,467 DEBUG:= connection is CONNECTING
+2024-12-04 20:07:18,477 DEBUG:< GET / HTTP/1.1
+2024-12-04 20:07:18,477 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 20:07:18,477 DEBUG:< Accept: */*
+2024-12-04 20:07:18,477 DEBUG:< User-Agent: ktor-client
+2024-12-04 20:07:18,477 DEBUG:< Upgrade: websocket
+2024-12-04 20:07:18,479 DEBUG:< Connection: Upgrade
+2024-12-04 20:07:18,479 DEBUG:< Sec-WebSocket-Key: 4UHsdfVpxXoEJzJhXMCacA==
+2024-12-04 20:07:18,479 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 20:07:18,479 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 20:07:18,479 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 20:07:18,479 DEBUG:< Accept-Encoding: gzip
+2024-12-04 20:07:18,480 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 20:07:18,480 DEBUG:> Date: Wed, 04 Dec 2024 15:07:18 GMT
+2024-12-04 20:07:18,480 DEBUG:> Upgrade: websocket
+2024-12-04 20:07:18,480 DEBUG:> Connection: Upgrade
+2024-12-04 20:07:18,481 DEBUG:> Sec-WebSocket-Accept: yZogw4MuRmUJPLyF0pU8RdV7j8A=
+2024-12-04 20:07:18,481 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 20:07:18,481 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 20:07:18,481 DEBUG:= connection is OPEN
+2024-12-04 20:07:18,481 INFO:connection open
+2024-12-04 20:07:18,481 ERROR:connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\asyncio\server.py", line 373, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.<lambda>() missing 1 required positional argument: 'path'
+2024-12-04 20:07:18,482 DEBUG:> CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 20:07:18,482 DEBUG:= connection is CLOSING
+2024-12-04 20:07:18,498 DEBUG:< CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 20:07:18,498 DEBUG:> EOF
+2024-12-04 20:07:18,498 DEBUG:x half-closing TCP connection
+2024-12-04 20:07:18,505 DEBUG:< EOF
+2024-12-04 20:07:18,505 DEBUG:= connection is CLOSED
+2024-12-04 21:05:44,146 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:05:44,154 INFO:9169 class names loaded.
+2024-12-04 21:05:45,428 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:05:45,961 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:05:46,114 INFO:Model state dict loaded.
+2024-12-04 21:05:46,114 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:05:46,156 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:05:46,157 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:05:46,157 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:05:46,167 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:05:46,167 INFO:Server started and waiting for connections...
+2024-12-04 21:05:46,167 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:05:52,291 DEBUG:= connection is CONNECTING
+2024-12-04 21:05:52,295 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:05:52,295 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:05:52,295 DEBUG:< Accept: */*
+2024-12-04 21:05:52,296 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:05:52,296 DEBUG:< Upgrade: websocket
+2024-12-04 21:05:52,296 DEBUG:< Connection: Upgrade
+2024-12-04 21:05:52,296 DEBUG:< Sec-WebSocket-Key: x8PNDoXEtSKXOkzK4p7DMg==
+2024-12-04 21:05:52,296 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:05:52,296 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:05:52,296 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:05:52,296 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:05:52,296 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:05:52,296 DEBUG:> Date: Wed, 04 Dec 2024 16:05:52 GMT
+2024-12-04 21:05:52,298 DEBUG:> Upgrade: websocket
+2024-12-04 21:05:52,298 DEBUG:> Connection: Upgrade
+2024-12-04 21:05:52,298 DEBUG:> Sec-WebSocket-Accept: d+JqEd29curWK8MTNUjs+VxD9KE=
+2024-12-04 21:05:52,298 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:05:52,298 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:05:52,298 DEBUG:= connection is OPEN
+2024-12-04 21:05:52,298 INFO:connection open
+2024-12-04 21:05:52,298 ERROR:connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\asyncio\server.py", line 373, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.<lambda>() missing 1 required positional argument: 'path'
+2024-12-04 21:05:52,299 DEBUG:> CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:05:52,299 DEBUG:= connection is CLOSING
+2024-12-04 21:05:52,369 DEBUG:< CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:05:52,370 DEBUG:> EOF
+2024-12-04 21:05:52,370 DEBUG:x half-closing TCP connection
+2024-12-04 21:05:52,370 DEBUG:< EOF
+2024-12-04 21:05:52,370 DEBUG:= connection is CLOSED
+2024-12-04 21:08:20,690 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:08:20,701 INFO:9169 class names loaded.
+2024-12-04 21:08:22,087 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:08:22,796 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:08:23,120 INFO:Model state dict loaded.
+2024-12-04 21:08:23,121 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:08:23,171 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:08:23,172 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:08:23,172 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:08:23,181 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:08:23,181 INFO:Server started and waiting for connections...
+2024-12-04 21:08:23,181 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:08:29,011 DEBUG:= connection is CONNECTING
+2024-12-04 21:08:29,015 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:08:29,015 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:08:29,015 DEBUG:< Accept: */*
+2024-12-04 21:08:29,016 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:08:29,016 DEBUG:< Upgrade: websocket
+2024-12-04 21:08:29,016 DEBUG:< Connection: Upgrade
+2024-12-04 21:08:29,016 DEBUG:< Sec-WebSocket-Key: Gee1QnLSyO6G4O9SZ/J0FQ==
+2024-12-04 21:08:29,016 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:08:29,017 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:08:29,017 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:08:29,017 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:08:29,017 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:08:29,017 DEBUG:> Date: Wed, 04 Dec 2024 16:08:29 GMT
+2024-12-04 21:08:29,017 DEBUG:> Upgrade: websocket
+2024-12-04 21:08:29,018 DEBUG:> Connection: Upgrade
+2024-12-04 21:08:29,018 DEBUG:> Sec-WebSocket-Accept: DbE6/JT9e/353gmuY6jXzHOBYm4=
+2024-12-04 21:08:29,018 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:08:29,018 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:08:29,018 DEBUG:= connection is OPEN
+2024-12-04 21:08:29,018 INFO:connection open
+2024-12-04 21:08:29,018 ERROR:connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\asyncio\server.py", line 373, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.<lambda>() missing 1 required positional argument: 'path'
+2024-12-04 21:08:29,019 DEBUG:> CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:08:29,020 DEBUG:= connection is CLOSING
+2024-12-04 21:08:29,040 DEBUG:< CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:08:29,040 DEBUG:> EOF
+2024-12-04 21:08:29,041 DEBUG:x half-closing TCP connection
+2024-12-04 21:08:29,041 DEBUG:< EOF
+2024-12-04 21:08:29,041 DEBUG:= connection is CLOSED
+2024-12-04 21:20:53,598 DEBUG:= connection is CONNECTING
+2024-12-04 21:20:53,602 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:20:53,603 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:20:53,603 DEBUG:< Accept: */*
+2024-12-04 21:20:53,603 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:20:53,603 DEBUG:< Upgrade: websocket
+2024-12-04 21:20:53,604 DEBUG:< Connection: Upgrade
+2024-12-04 21:20:53,604 DEBUG:< Sec-WebSocket-Key: WoI0j9DzStEXLlUuINT9ng==
+2024-12-04 21:20:53,604 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:20:53,604 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:20:53,604 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:20:53,604 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:20:53,605 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:20:53,605 DEBUG:> Date: Wed, 04 Dec 2024 16:20:53 GMT
+2024-12-04 21:20:53,605 DEBUG:> Upgrade: websocket
+2024-12-04 21:20:53,605 DEBUG:> Connection: Upgrade
+2024-12-04 21:20:53,605 DEBUG:> Sec-WebSocket-Accept: v7VClafMEv1s9vcGd94P1/6KhaE=
+2024-12-04 21:20:53,605 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:20:53,605 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:20:53,605 DEBUG:= connection is OPEN
+2024-12-04 21:20:53,605 INFO:connection open
+2024-12-04 21:20:53,605 ERROR:connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\asyncio\server.py", line 373, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.<lambda>() missing 1 required positional argument: 'path'
+2024-12-04 21:20:53,606 DEBUG:> CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:20:53,606 DEBUG:= connection is CLOSING
+2024-12-04 21:20:53,624 DEBUG:< CLOSE 1011 (internal error) [2 bytes]
+2024-12-04 21:20:53,625 DEBUG:> EOF
+2024-12-04 21:20:53,625 DEBUG:x half-closing TCP connection
+2024-12-04 21:20:53,627 DEBUG:< EOF
+2024-12-04 21:20:53,627 DEBUG:= connection is CLOSED
+2024-12-04 21:23:02,933 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:23:02,937 INFO:9169 class names loaded.
+2024-12-04 21:23:03,347 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:23:03,563 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:23:03,667 INFO:Model state dict loaded.
+2024-12-04 21:23:03,667 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:23:03,705 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:23:03,706 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:23:03,707 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:23:03,716 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:23:03,716 INFO:Server started and waiting for connections...
+2024-12-04 21:23:03,716 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:23:09,252 DEBUG:= connection is CONNECTING
+2024-12-04 21:23:09,253 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:23:09,253 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:23:09,253 DEBUG:< Accept: */*
+2024-12-04 21:23:09,253 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:23:09,253 DEBUG:< Upgrade: websocket
+2024-12-04 21:23:09,253 DEBUG:< Connection: Upgrade
+2024-12-04 21:23:09,253 DEBUG:< Sec-WebSocket-Key: S/U8Ni57bUS0SuxuYQpF3g==
+2024-12-04 21:23:09,254 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:23:09,254 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:23:09,254 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:23:09,254 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:23:09,255 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:23:09,255 DEBUG:> Date: Wed, 04 Dec 2024 16:23:09 GMT
+2024-12-04 21:23:09,255 DEBUG:> Upgrade: websocket
+2024-12-04 21:23:09,256 DEBUG:> Connection: Upgrade
+2024-12-04 21:23:09,256 DEBUG:> Sec-WebSocket-Accept: lVtNQxj8YB1PPba+UATJLz4Z+lU=
+2024-12-04 21:23:09,256 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:23:09,256 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:23:09,256 DEBUG:= connection is OPEN
+2024-12-04 21:23:09,256 INFO:connection open
+2024-12-04 21:23:09,256 INFO:Connection received from client.
+2024-12-04 21:23:13,679 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 49 45 4e 44 ae 42 60 82 [39593 bytes]
+2024-12-04 21:23:13,679 DEBUG:Received 39593 bytes of data from client.
+2024-12-04 21:23:13,679 INFO:Preprocessing image...
+2024-12-04 21:23:13,679 DEBUG:Opening image...
+2024-12-04 21:23:13,685 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:23:13,685 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:23:13,685 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:23:13,686 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:23:13,686 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:23:13,687 DEBUG:Image opened successfully.
+2024-12-04 21:23:13,689 DEBUG:Image transformed into tensor.
+2024-12-04 21:23:13,690 INFO:Image preprocessed successfully.
+2024-12-04 21:23:13,690 INFO:Running model inference...
+2024-12-04 21:23:14,051 INFO:Model inference completed.
+2024-12-04 21:23:14,051 DEBUG:Confidence score: 0.019380005076527596
+2024-12-04 21:23:14,051 INFO:Confidence below threshold; sending empty response.
+2024-12-04 21:23:14,052 DEBUG:> TEXT '' [0 bytes]
+2024-12-04 21:23:14,052 INFO:Response sent to client.
+2024-12-04 21:23:14,052 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:23:14,052 DEBUG:= connection is CLOSING
+2024-12-04 21:23:14,176 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:23:14,176 DEBUG:> EOF
+2024-12-04 21:23:14,176 DEBUG:x half-closing TCP connection
+2024-12-04 21:23:14,179 DEBUG:< EOF
+2024-12-04 21:23:14,179 DEBUG:= connection is CLOSED
+2024-12-04 21:23:27,356 DEBUG:= connection is CONNECTING
+2024-12-04 21:23:27,361 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:23:27,361 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:23:27,361 DEBUG:< Accept: */*
+2024-12-04 21:23:27,362 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:23:27,362 DEBUG:< Upgrade: websocket
+2024-12-04 21:23:27,362 DEBUG:< Connection: Upgrade
+2024-12-04 21:23:27,362 DEBUG:< Sec-WebSocket-Key: 5hdHkYRaAWXV0SStuQYFIA==
+2024-12-04 21:23:27,362 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:23:27,362 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:23:27,363 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:23:27,363 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:23:27,363 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:23:27,363 DEBUG:> Date: Wed, 04 Dec 2024 16:23:27 GMT
+2024-12-04 21:23:27,363 DEBUG:> Upgrade: websocket
+2024-12-04 21:23:27,363 DEBUG:> Connection: Upgrade
+2024-12-04 21:23:27,363 DEBUG:> Sec-WebSocket-Accept: R9HyowzuDFHRrW8xyZLTz1ws0L8=
+2024-12-04 21:23:27,363 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:23:27,364 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:23:27,364 DEBUG:= connection is OPEN
+2024-12-04 21:23:27,364 INFO:connection open
+2024-12-04 21:23:27,365 INFO:Connection received from client.
+2024-12-04 21:23:32,645 DEBUG:> CLOSE 1009 (message too big) frame with 7668502 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 21:23:32,645 DEBUG:= connection is CLOSING
+2024-12-04 21:23:32,646 DEBUG:> EOF
+2024-12-04 21:23:32,646 DEBUG:x half-closing TCP connection
+2024-12-04 21:23:34,181 DEBUG:< EOF
+2024-12-04 21:23:34,182 DEBUG:= connection is CLOSED
+2024-12-04 21:23:34,182 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 7668502 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 21:24:41,745 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:24:41,749 INFO:9169 class names loaded.
+2024-12-04 21:24:42,171 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:24:42,386 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:24:42,498 INFO:Model state dict loaded.
+2024-12-04 21:24:42,498 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:24:42,548 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:24:42,549 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:24:42,549 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:24:42,561 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:24:42,561 INFO:Server started and waiting for connections...
+2024-12-04 21:24:42,561 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:24:48,139 DEBUG:= connection is CONNECTING
+2024-12-04 21:24:48,143 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:24:48,144 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:24:48,144 DEBUG:< Accept: */*
+2024-12-04 21:24:48,144 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:24:48,144 DEBUG:< Upgrade: websocket
+2024-12-04 21:24:48,144 DEBUG:< Connection: Upgrade
+2024-12-04 21:24:48,144 DEBUG:< Sec-WebSocket-Key: rhCWEOWAStwqRIzCJDu4cA==
+2024-12-04 21:24:48,145 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:24:48,145 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:24:48,145 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:24:48,145 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:24:48,145 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:24:48,145 DEBUG:> Date: Wed, 04 Dec 2024 16:24:48 GMT
+2024-12-04 21:24:48,145 DEBUG:> Upgrade: websocket
+2024-12-04 21:24:48,145 DEBUG:> Connection: Upgrade
+2024-12-04 21:24:48,147 DEBUG:> Sec-WebSocket-Accept: P/b2/GJk6NUrXfHsRIrHVdtav4M=
+2024-12-04 21:24:48,147 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:24:48,147 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:24:48,147 DEBUG:= connection is OPEN
+2024-12-04 21:24:48,147 INFO:connection open
+2024-12-04 21:24:48,147 INFO:Connection received from client.
+2024-12-04 21:24:52,495 DEBUG:> CLOSE 1009 (message too big) frame with 7668502 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 21:24:52,495 DEBUG:= connection is CLOSING
+2024-12-04 21:24:52,495 DEBUG:> EOF
+2024-12-04 21:24:52,495 DEBUG:x half-closing TCP connection
+2024-12-04 21:24:54,178 DEBUG:< EOF
+2024-12-04 21:24:54,178 DEBUG:= connection is CLOSED
+2024-12-04 21:24:54,179 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 7668502 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 21:31:44,226 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:31:44,230 INFO:9169 class names loaded.
+2024-12-04 21:31:44,715 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:31:44,938 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:31:45,053 INFO:Model state dict loaded.
+2024-12-04 21:31:45,053 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:31:45,099 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:31:45,100 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:31:45,100 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:31:45,111 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:31:45,111 INFO:Server started and waiting for connections...
+2024-12-04 21:31:45,111 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:31:52,564 DEBUG:= connection is CONNECTING
+2024-12-04 21:31:52,568 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:31:52,569 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:31:52,569 DEBUG:< Accept: */*
+2024-12-04 21:31:52,570 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:31:52,570 DEBUG:< Upgrade: websocket
+2024-12-04 21:31:52,570 DEBUG:< Connection: Upgrade
+2024-12-04 21:31:52,570 DEBUG:< Sec-WebSocket-Key: 2f4SQ6sSNPVIFsIWDTZSQg==
+2024-12-04 21:31:52,570 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:31:52,571 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:31:52,571 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:31:52,571 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:31:52,571 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:31:52,571 DEBUG:> Date: Wed, 04 Dec 2024 16:31:52 GMT
+2024-12-04 21:31:52,571 DEBUG:> Upgrade: websocket
+2024-12-04 21:31:52,571 DEBUG:> Connection: Upgrade
+2024-12-04 21:31:52,572 DEBUG:> Sec-WebSocket-Accept: YrLTmzL0ob/hVtEuni2jolpVOu8=
+2024-12-04 21:31:52,572 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:31:52,572 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:31:52,572 DEBUG:= connection is OPEN
+2024-12-04 21:31:52,572 INFO:connection open
+2024-12-04 21:31:52,572 INFO:Connection received from client.
+2024-12-04 21:31:58,304 DEBUG:> CLOSE 1009 (message too big) frame with 1048890 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 21:31:58,304 DEBUG:= connection is CLOSING
+2024-12-04 21:31:58,304 DEBUG:> EOF
+2024-12-04 21:31:58,305 DEBUG:x half-closing TCP connection
+2024-12-04 21:31:59,819 DEBUG:< EOF
+2024-12-04 21:31:59,819 DEBUG:= connection is CLOSED
+2024-12-04 21:31:59,819 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 1048890 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 21:32:18,807 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:32:18,811 INFO:9169 class names loaded.
+2024-12-04 21:32:20,171 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:32:20,847 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:32:21,113 INFO:Model state dict loaded.
+2024-12-04 21:32:21,114 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:32:21,153 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:32:21,154 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:32:21,154 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:32:21,164 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:32:21,164 INFO:Server started and waiting for connections...
+2024-12-04 21:32:21,164 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:32:21,965 DEBUG:= connection is CONNECTING
+2024-12-04 21:32:21,966 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:32:21,966 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:32:21,966 DEBUG:< Accept: */*
+2024-12-04 21:32:21,966 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:32:21,966 DEBUG:< Upgrade: websocket
+2024-12-04 21:32:21,967 DEBUG:< Connection: Upgrade
+2024-12-04 21:32:21,967 DEBUG:< Sec-WebSocket-Key: xpgsO+ZHr/YqriqJJKpxlQ==
+2024-12-04 21:32:21,967 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:32:21,967 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:32:21,967 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:32:21,967 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:32:21,967 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:32:21,967 DEBUG:> Date: Wed, 04 Dec 2024 16:32:21 GMT
+2024-12-04 21:32:21,967 DEBUG:> Upgrade: websocket
+2024-12-04 21:32:21,968 DEBUG:> Connection: Upgrade
+2024-12-04 21:32:21,968 DEBUG:> Sec-WebSocket-Accept: fR9w43KGZ5Mo9C1T3w7MjvsPqFc=
+2024-12-04 21:32:21,968 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:32:21,968 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:32:21,968 DEBUG:= connection is OPEN
+2024-12-04 21:32:21,968 INFO:connection open
+2024-12-04 21:32:21,968 INFO:Connection received from client.
+2024-12-04 21:32:29,805 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 21:32:29,805 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 21:32:29,805 INFO:Preprocessing image...
+2024-12-04 21:32:29,805 DEBUG:Opening image...
+2024-12-04 21:32:29,812 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:32:29,812 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:32:29,812 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:32:29,812 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:32:29,812 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:32:29,860 ERROR:Error during image preprocessing: image file is truncated
+2024-12-04 21:32:29,861 ERROR:Error in server: Image preprocessing error: image file is truncated
+2024-12-04 21:32:29,892 ERROR:Traceback: Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 280, in load
+    s = read(self.decodermaxblock)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 989, in load_read
+    cid, pos, length = self.png.read()
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 173, in read
+    length = i32(s)
+             ^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\_binary.py", line 95, in i32be
+    return unpack_from(">I", c, o)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 92, in preprocess_image
+    image = Image.open(image_stream).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\Image.py", line 993, in convert
+    self.load()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 287, in load
+    raise OSError(msg) from e
+OSError: image file is truncated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 138, in handle_client
+    input_tensor = preprocess_image(image_stream, transform)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\archive\websocket.py", line 102, in preprocess_image
+    raise ValueError(f"Image preprocessing error: {e}")
+ValueError: Image preprocessing error: image file is truncated
+
+2024-12-04 21:32:29,894 DEBUG:> TEXT 'Server error: Image preprocessing error: image file is truncated' [64 bytes]
+2024-12-04 21:32:29,895 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:32:29,895 DEBUG:= connection is CLOSING
+2024-12-04 21:32:30,021 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 21:32:30,235 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 21:32:30,419 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 21:32:30,601 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 21:32:30,869 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 21:32:31,091 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 21:32:31,092 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 21:32:31,094 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:32:31,094 DEBUG:> EOF
+2024-12-04 21:32:31,094 DEBUG:x half-closing TCP connection
+2024-12-04 21:32:31,094 DEBUG:< EOF
+2024-12-04 21:32:31,094 DEBUG:= connection is CLOSED
+2024-12-04 21:45:46,392 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:45:46,396 INFO:9169 class names loaded.
+2024-12-04 21:45:46,813 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:45:47,032 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:45:47,149 INFO:Model state dict loaded.
+2024-12-04 21:45:47,149 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:45:47,204 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:45:47,204 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:45:47,205 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:45:47,214 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:45:47,214 INFO:Server started and waiting for connections...
+2024-12-04 21:45:47,215 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:46:01,193 DEBUG:= connection is CONNECTING
+2024-12-04 21:46:01,197 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:46:01,197 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:46:01,197 DEBUG:< Accept: */*
+2024-12-04 21:46:01,197 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:46:01,197 DEBUG:< Upgrade: websocket
+2024-12-04 21:46:01,198 DEBUG:< Connection: Upgrade
+2024-12-04 21:46:01,198 DEBUG:< Sec-WebSocket-Key: wWzzyRbD1wup6bM0XQCtmw==
+2024-12-04 21:46:01,198 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:46:01,198 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:46:01,198 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:46:01,198 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:46:01,198 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:46:01,198 DEBUG:> Date: Wed, 04 Dec 2024 16:46:01 GMT
+2024-12-04 21:46:01,200 DEBUG:> Upgrade: websocket
+2024-12-04 21:46:01,200 DEBUG:> Connection: Upgrade
+2024-12-04 21:46:01,200 DEBUG:> Sec-WebSocket-Accept: ugp2tab9ycCKhzOrefDm199e8t8=
+2024-12-04 21:46:01,200 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:46:01,200 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:46:01,200 DEBUG:= connection is OPEN
+2024-12-04 21:46:01,200 INFO:connection open
+2024-12-04 21:46:01,200 INFO:Connection received from client.
+2024-12-04 21:46:06,836 DEBUG:> CLOSE 1009 (message too big) frame with 7668502 bytes ...s limit of 1048576 bytes [57 bytes]
+2024-12-04 21:46:06,836 DEBUG:= connection is CLOSING
+2024-12-04 21:46:06,837 DEBUG:> EOF
+2024-12-04 21:46:06,837 DEBUG:x half-closing TCP connection
+2024-12-04 21:46:08,891 DEBUG:< EOF
+2024-12-04 21:46:08,891 DEBUG:= connection is CLOSED
+2024-12-04 21:46:08,891 WARNING:Client disconnected before sending data: sent 1009 (message too big) frame with 7668502 bytes exceeds limit of 1048576 bytes; no close frame received
+2024-12-04 21:51:12,171 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:51:12,174 INFO:9169 class names loaded.
+2024-12-04 21:51:12,589 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:51:12,798 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:51:12,899 INFO:Model state dict loaded.
+2024-12-04 21:51:12,899 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:51:12,936 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:51:12,937 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:51:12,937 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:51:12,946 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:51:12,948 INFO:Server started and waiting for connections...
+2024-12-04 21:51:12,948 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:51:20,844 DEBUG:= connection is CONNECTING
+2024-12-04 21:51:20,847 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:51:20,847 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:51:20,848 DEBUG:< Accept: */*
+2024-12-04 21:51:20,848 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:51:20,848 DEBUG:< Upgrade: websocket
+2024-12-04 21:51:20,848 DEBUG:< Connection: Upgrade
+2024-12-04 21:51:20,848 DEBUG:< Sec-WebSocket-Key: xavKnOFYwD1/lTwHVGfv4A==
+2024-12-04 21:51:20,848 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:51:20,848 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:51:20,848 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:51:20,848 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:51:20,849 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:51:20,849 DEBUG:> Date: Wed, 04 Dec 2024 16:51:20 GMT
+2024-12-04 21:51:20,849 DEBUG:> Upgrade: websocket
+2024-12-04 21:51:20,849 DEBUG:> Connection: Upgrade
+2024-12-04 21:51:20,849 DEBUG:> Sec-WebSocket-Accept: xQiRxDICt9PGocVBKsFmO92iYnM=
+2024-12-04 21:51:20,849 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:51:20,849 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:51:20,849 DEBUG:= connection is OPEN
+2024-12-04 21:51:20,849 INFO:connection open
+2024-12-04 21:51:20,850 INFO:Connection received from client.
+2024-12-04 21:51:26,518 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 21:51:26,518 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 21:51:26,519 INFO:Preprocessing image...
+2024-12-04 21:51:26,519 DEBUG:Opening image...
+2024-12-04 21:51:26,524 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:51:26,524 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:51:26,524 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:51:26,524 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:51:26,524 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:51:26,548 ERROR:Error during image preprocessing: image file is truncated
+2024-12-04 21:51:26,548 ERROR:Error in server: Image preprocessing error: image file is truncated
+2024-12-04 21:51:26,550 ERROR:Traceback: Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 280, in load
+    s = read(self.decodermaxblock)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 989, in load_read
+    cid, pos, length = self.png.read()
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 173, in read
+    length = i32(s)
+             ^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\_binary.py", line 95, in i32be
+    return unpack_from(">I", c, o)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 92, in preprocess_image
+    image = Image.open(image_stream).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\Image.py", line 993, in convert
+    self.load()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 287, in load
+    raise OSError(msg) from e
+OSError: image file is truncated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 138, in handle_client
+    input_tensor = preprocess_image(image_stream, transform)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\archive\websocket.py", line 102, in preprocess_image
+    raise ValueError(f"Image preprocessing error: {e}")
+ValueError: Image preprocessing error: image file is truncated
+
+2024-12-04 21:51:26,551 DEBUG:> TEXT 'Server error: Image preprocessing error: image file is truncated' [64 bytes]
+2024-12-04 21:51:26,552 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:51:26,552 DEBUG:= connection is CLOSING
+2024-12-04 21:51:26,690 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 21:51:27,017 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 21:51:27,129 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 21:51:27,266 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 21:51:27,613 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 21:51:27,705 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 21:51:27,748 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 21:51:27,748 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:51:27,748 DEBUG:> EOF
+2024-12-04 21:51:27,748 DEBUG:x half-closing TCP connection
+2024-12-04 21:51:27,748 DEBUG:< EOF
+2024-12-04 21:51:27,749 DEBUG:= connection is CLOSED
+2024-12-04 21:53:19,465 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:53:19,469 INFO:9169 class names loaded.
+2024-12-04 21:53:19,869 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:53:20,087 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:53:20,186 INFO:Model state dict loaded.
+2024-12-04 21:53:20,186 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:53:20,225 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:53:20,226 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:53:20,226 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:53:20,235 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:53:20,236 INFO:Server started and waiting for connections...
+2024-12-04 21:53:20,236 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:53:21,644 DEBUG:= connection is CONNECTING
+2024-12-04 21:53:21,650 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:53:21,650 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:53:21,650 DEBUG:< Accept: */*
+2024-12-04 21:53:21,650 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:53:21,650 DEBUG:< Upgrade: websocket
+2024-12-04 21:53:21,650 DEBUG:< Connection: Upgrade
+2024-12-04 21:53:21,650 DEBUG:< Sec-WebSocket-Key: wi7oSyeDKJOauWn3JuymhA==
+2024-12-04 21:53:21,650 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:53:21,650 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:53:21,650 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:53:21,651 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:53:21,651 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:53:21,651 DEBUG:> Date: Wed, 04 Dec 2024 16:53:21 GMT
+2024-12-04 21:53:21,651 DEBUG:> Upgrade: websocket
+2024-12-04 21:53:21,651 DEBUG:> Connection: Upgrade
+2024-12-04 21:53:21,651 DEBUG:> Sec-WebSocket-Accept: GdqHxsN0d8kWUjQ5NjuaTmsMVR4=
+2024-12-04 21:53:21,651 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:53:21,651 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:53:21,651 DEBUG:= connection is OPEN
+2024-12-04 21:53:21,652 INFO:connection open
+2024-12-04 21:53:21,652 INFO:Connection received from client.
+2024-12-04 21:53:27,806 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 21:53:27,807 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 21:53:27,807 INFO:Preprocessing image...
+2024-12-04 21:53:27,807 DEBUG:Opening image...
+2024-12-04 21:53:27,813 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:53:27,813 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:53:27,813 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:53:27,814 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:53:27,814 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:53:27,835 ERROR:Error during image preprocessing: image file is truncated
+2024-12-04 21:53:27,835 ERROR:Error in server: Image preprocessing error: image file is truncated
+2024-12-04 21:53:27,838 ERROR:Traceback: Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 280, in load
+    s = read(self.decodermaxblock)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 989, in load_read
+    cid, pos, length = self.png.read()
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 173, in read
+    length = i32(s)
+             ^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\_binary.py", line 95, in i32be
+    return unpack_from(">I", c, o)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 92, in preprocess_image
+    image = Image.open(image_stream).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\Image.py", line 993, in convert
+    self.load()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 287, in load
+    raise OSError(msg) from e
+OSError: image file is truncated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 138, in handle_client
+    input_tensor = preprocess_image(image_stream, transform)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\archive\websocket.py", line 102, in preprocess_image
+    raise ValueError(f"Image preprocessing error: {e}")
+ValueError: Image preprocessing error: image file is truncated
+
+2024-12-04 21:53:27,840 DEBUG:> TEXT 'Server error: Image preprocessing error: image file is truncated' [64 bytes]
+2024-12-04 21:53:27,840 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:53:27,841 DEBUG:= connection is CLOSING
+2024-12-04 21:53:28,042 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 21:53:28,244 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 21:53:28,654 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 21:53:28,656 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 21:53:28,831 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 21:53:28,939 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 21:53:29,004 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 21:53:29,005 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:53:29,005 DEBUG:> EOF
+2024-12-04 21:53:29,005 DEBUG:x half-closing TCP connection
+2024-12-04 21:53:29,005 DEBUG:< EOF
+2024-12-04 21:53:29,005 DEBUG:= connection is CLOSED
+2024-12-04 21:57:12,952 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:57:12,956 INFO:9169 class names loaded.
+2024-12-04 21:57:13,368 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:57:13,878 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:57:14,071 INFO:Model state dict loaded.
+2024-12-04 21:57:14,072 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:57:14,110 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:57:14,111 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:57:14,111 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:57:14,120 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:57:14,120 INFO:Server started and waiting for connections...
+2024-12-04 21:57:14,120 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:57:14,780 DEBUG:= connection is CONNECTING
+2024-12-04 21:57:14,781 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:57:14,781 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:57:14,781 DEBUG:< Accept: */*
+2024-12-04 21:57:14,781 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:57:14,781 DEBUG:< Upgrade: websocket
+2024-12-04 21:57:14,782 DEBUG:< Connection: Upgrade
+2024-12-04 21:57:14,782 DEBUG:< Sec-WebSocket-Key: 6IWkU2KUnUkV051KrMiFfw==
+2024-12-04 21:57:14,782 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:57:14,782 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:57:14,782 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:57:14,782 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:57:14,783 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:57:14,783 DEBUG:> Date: Wed, 04 Dec 2024 16:57:14 GMT
+2024-12-04 21:57:14,783 DEBUG:> Upgrade: websocket
+2024-12-04 21:57:14,783 DEBUG:> Connection: Upgrade
+2024-12-04 21:57:14,783 DEBUG:> Sec-WebSocket-Accept: v0XEAu1yh8bIxuqXlQK9h1s4Jyc=
+2024-12-04 21:57:14,784 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:57:14,784 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:57:14,784 DEBUG:= connection is OPEN
+2024-12-04 21:57:14,784 INFO:connection open
+2024-12-04 21:57:14,784 INFO:Connection received from client.
+2024-12-04 21:57:17,110 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 21:57:17,110 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 21:57:17,110 INFO:Preprocessing image...
+2024-12-04 21:57:17,110 DEBUG:Opening image...
+2024-12-04 21:57:17,117 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:57:17,117 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:57:17,117 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:57:17,117 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:57:17,117 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:57:17,138 ERROR:Error during image preprocessing: image file is truncated
+2024-12-04 21:57:17,139 ERROR:Error in server: Image preprocessing error: image file is truncated
+2024-12-04 21:57:17,141 ERROR:Traceback: Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 280, in load
+    s = read(self.decodermaxblock)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 989, in load_read
+    cid, pos, length = self.png.read()
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 173, in read
+    length = i32(s)
+             ^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\_binary.py", line 95, in i32be
+    return unpack_from(">I", c, o)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 92, in preprocess_image
+    image = Image.open(image_stream).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\Image.py", line 993, in convert
+    self.load()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 287, in load
+    raise OSError(msg) from e
+OSError: image file is truncated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 138, in handle_client
+    input_tensor = preprocess_image(image_stream, transform)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\archive\websocket.py", line 102, in preprocess_image
+    raise ValueError(f"Image preprocessing error: {e}")
+ValueError: Image preprocessing error: image file is truncated
+
+2024-12-04 21:57:17,143 DEBUG:> TEXT 'Server error: Image preprocessing error: image file is truncated' [64 bytes]
+2024-12-04 21:57:17,144 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:57:17,144 DEBUG:= connection is CLOSING
+2024-12-04 21:57:17,321 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 21:57:17,503 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 21:57:17,698 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 21:57:17,867 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 21:57:18,023 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 21:57:18,239 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 21:57:18,283 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 21:57:18,285 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:57:18,285 DEBUG:> EOF
+2024-12-04 21:57:18,285 DEBUG:x half-closing TCP connection
+2024-12-04 21:57:18,285 DEBUG:< EOF
+2024-12-04 21:57:18,286 DEBUG:= connection is CLOSED
+2024-12-04 21:59:08,525 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 21:59:08,530 INFO:9169 class names loaded.
+2024-12-04 21:59:08,964 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 21:59:09,220 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 21:59:09,321 INFO:Model state dict loaded.
+2024-12-04 21:59:09,321 INFO:Model's output layer matches the number of classes.
+2024-12-04 21:59:09,359 INFO:Model loaded and set to evaluation mode.
+2024-12-04 21:59:09,360 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 21:59:09,360 DEBUG:Using proactor: IocpProactor
+2024-12-04 21:59:09,369 INFO:server listening on 172.20.10.11:8765
+2024-12-04 21:59:09,369 INFO:Server started and waiting for connections...
+2024-12-04 21:59:09,369 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 21:59:10,369 DEBUG:= connection is CONNECTING
+2024-12-04 21:59:10,374 DEBUG:< GET / HTTP/1.1
+2024-12-04 21:59:10,374 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 21:59:10,374 DEBUG:< Accept: */*
+2024-12-04 21:59:10,374 DEBUG:< User-Agent: ktor-client
+2024-12-04 21:59:10,374 DEBUG:< Upgrade: websocket
+2024-12-04 21:59:10,374 DEBUG:< Connection: Upgrade
+2024-12-04 21:59:10,374 DEBUG:< Sec-WebSocket-Key: WnUzU4uCcpfDeGLDeTtuRg==
+2024-12-04 21:59:10,374 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 21:59:10,374 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 21:59:10,374 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 21:59:10,374 DEBUG:< Accept-Encoding: gzip
+2024-12-04 21:59:10,375 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 21:59:10,375 DEBUG:> Date: Wed, 04 Dec 2024 16:59:10 GMT
+2024-12-04 21:59:10,375 DEBUG:> Upgrade: websocket
+2024-12-04 21:59:10,375 DEBUG:> Connection: Upgrade
+2024-12-04 21:59:10,375 DEBUG:> Sec-WebSocket-Accept: 7FSXG3/pB5pETvNR3qMt62f9WSU=
+2024-12-04 21:59:10,375 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 21:59:10,375 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 21:59:10,375 DEBUG:= connection is OPEN
+2024-12-04 21:59:10,376 INFO:connection open
+2024-12-04 21:59:10,376 INFO:Connection received from client.
+2024-12-04 21:59:16,612 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 21:59:16,612 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 21:59:16,612 INFO:Preprocessing image...
+2024-12-04 21:59:16,614 DEBUG:Opening image...
+2024-12-04 21:59:16,619 DEBUG:STREAM b'IHDR' 16 13
+2024-12-04 21:59:16,619 DEBUG:STREAM b'sRGB' 41 1
+2024-12-04 21:59:16,620 DEBUG:STREAM b'sBIT' 54 3
+2024-12-04 21:59:16,620 DEBUG:b'sBIT' 54 3 (unknown)
+2024-12-04 21:59:16,620 DEBUG:STREAM b'IDAT' 69 8192
+2024-12-04 21:59:16,642 ERROR:Error during image preprocessing: image file is truncated
+2024-12-04 21:59:16,642 ERROR:Error in server: Image preprocessing error: image file is truncated
+2024-12-04 21:59:16,645 ERROR:Traceback: Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 280, in load
+    s = read(self.decodermaxblock)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 989, in load_read
+    cid, pos, length = self.png.read()
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\PngImagePlugin.py", line 173, in read
+    length = i32(s)
+             ^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\_binary.py", line 95, in i32be
+    return unpack_from(">I", c, o)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 92, in preprocess_image
+    image = Image.open(image_stream).convert('RGB')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\Image.py", line 993, in convert
+    self.load()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PIL\ImageFile.py", line 287, in load
+    raise OSError(msg) from e
+OSError: image file is truncated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\archive\websocket.py", line 138, in handle_client
+    input_tensor = preprocess_image(image_stream, transform)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\archive\websocket.py", line 102, in preprocess_image
+    raise ValueError(f"Image preprocessing error: {e}")
+ValueError: Image preprocessing error: image file is truncated
+
+2024-12-04 21:59:16,647 DEBUG:> TEXT 'Server error: Image preprocessing error: image file is truncated' [64 bytes]
+2024-12-04 21:59:16,648 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:59:16,648 DEBUG:= connection is CLOSING
+2024-12-04 21:59:16,742 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 21:59:16,890 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 21:59:17,069 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 21:59:17,212 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 21:59:17,441 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 21:59:17,641 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 21:59:17,711 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 21:59:17,711 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 21:59:17,711 DEBUG:> EOF
+2024-12-04 21:59:17,713 DEBUG:x half-closing TCP connection
+2024-12-04 21:59:17,713 DEBUG:< EOF
+2024-12-04 21:59:17,713 DEBUG:= connection is CLOSED
+2024-12-04 22:01:00,126 INFO:Loading class names from dataset folder ./car_models-master...
+2024-12-04 22:01:00,131 INFO:9169 class names loaded.
+2024-12-04 22:01:01,539 INFO:Loading model from ./output1/car_model_recognition_final.pt...
+2024-12-04 22:01:01,857 INFO:Checkpoint was trained with 9169 classes.
+2024-12-04 22:01:01,962 INFO:Model state dict loaded.
+2024-12-04 22:01:01,962 INFO:Model's output layer matches the number of classes.
+2024-12-04 22:01:02,005 INFO:Model loaded and set to evaluation mode.
+2024-12-04 22:01:02,006 INFO:Starting WebSocket server at ws://172.20.10.11:8765
+2024-12-04 22:01:02,006 DEBUG:Using proactor: IocpProactor
+2024-12-04 22:01:02,015 INFO:server listening on 172.20.10.11:8765
+2024-12-04 22:01:02,015 INFO:Server started and waiting for connections...
+2024-12-04 22:01:02,015 INFO:Connect to the WebSocket at ws://172.20.10.11:8765
+2024-12-04 22:01:02,782 DEBUG:= connection is CONNECTING
+2024-12-04 22:01:02,787 DEBUG:< GET / HTTP/1.1
+2024-12-04 22:01:02,787 DEBUG:< Accept-Charset: UTF-8
+2024-12-04 22:01:02,787 DEBUG:< Accept: */*
+2024-12-04 22:01:02,787 DEBUG:< User-Agent: ktor-client
+2024-12-04 22:01:02,787 DEBUG:< Upgrade: websocket
+2024-12-04 22:01:02,787 DEBUG:< Connection: Upgrade
+2024-12-04 22:01:02,787 DEBUG:< Sec-WebSocket-Key: 1dWHtMS9JDUbgrMlro6mlg==
+2024-12-04 22:01:02,788 DEBUG:< Sec-WebSocket-Version: 13
+2024-12-04 22:01:02,788 DEBUG:< Sec-WebSocket-Extensions: permessage-deflate
+2024-12-04 22:01:02,788 DEBUG:< Host: 172.20.10.11:8765
+2024-12-04 22:01:02,788 DEBUG:< Accept-Encoding: gzip
+2024-12-04 22:01:02,788 DEBUG:> HTTP/1.1 101 Switching Protocols
+2024-12-04 22:01:02,788 DEBUG:> Date: Wed, 04 Dec 2024 17:01:02 GMT
+2024-12-04 22:01:02,788 DEBUG:> Upgrade: websocket
+2024-12-04 22:01:02,789 DEBUG:> Connection: Upgrade
+2024-12-04 22:01:02,789 DEBUG:> Sec-WebSocket-Accept: gPKIQWYNlmNb1YZZvwNsgilkZEU=
+2024-12-04 22:01:02,789 DEBUG:> Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12
+2024-12-04 22:01:02,789 DEBUG:> Server: Python/3.12 websockets/14.1
+2024-12-04 22:01:02,789 DEBUG:= connection is OPEN
+2024-12-04 22:01:02,789 INFO:connection open
+2024-12-04 22:01:02,789 INFO:Connection received from client.
+2024-12-04 22:01:10,291 DEBUG:< BINARY 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 ... 0b 08 d5 05 1b c3 16 6e [1000000 bytes]
+2024-12-04 22:01:10,292 DEBUG:Received 1000000 bytes of data from client.
+2024-12-04 22:01:10,292 DEBUG:> CLOSE 1000 (OK) [2 bytes]
+2024-12-04 22:01:10,292 DEBUG:= connection is CLOSING
+2024-12-04 22:01:10,479 DEBUG:< BINARY e9 99 6a f0 50 53 ba 16 10 11 b5 5f 0b cc 84 c1 ... 6a 47 58 ab f7 d3 36 1f [1000000 bytes]
+2024-12-04 22:01:10,628 DEBUG:< BINARY f7 4a e2 1e 96 50 fd 23 fe 7f 54 09 ef 3f 01 9a ... 90 6b 05 03 59 90 73 2b [1000000 bytes]
+2024-12-04 22:01:10,816 DEBUG:< BINARY e9 c3 51 f0 c4 40 50 55 86 7a 21 28 6a d9 4d 88 ... f7 c4 99 e4 ae 1f e6 da [1000000 bytes]
+2024-12-04 22:01:11,070 DEBUG:< BINARY 51 a1 a4 44 4a 68 cc df 49 a0 e0 91 35 ae 00 52 ... 52 9d 1f b3 77 7d 9d 20 [1000000 bytes]
+2024-12-04 22:01:11,207 DEBUG:< BINARY 20 9a 28 ae 43 6a 85 0a 8e f8 a3 0e 8e 80 34 18 ... 7a 6f 21 d7 af da 31 3a [1000000 bytes]
+2024-12-04 22:01:11,440 DEBUG:< BINARY e0 07 e4 10 48 9b 83 82 22 da 4f a9 eb ba 96 3d ... df c8 98 48 7a b7 f6 7c [1000000 bytes]
+2024-12-04 22:01:11,538 DEBUG:< BINARY 3e ef db fb 1f 3f 6a 5d c7 a6 95 31 8b b0 49 61 ... 49 45 4e 44 ae 42 60 82 [666704 bytes]
+2024-12-04 22:01:11,539 DEBUG:< CLOSE 1000 (OK) [2 bytes]
+2024-12-04 22:01:11,539 DEBUG:> EOF
+2024-12-04 22:01:11,539 DEBUG:x half-closing TCP connection
+2024-12-04 22:01:11,541 DEBUG:< EOF
+2024-12-04 22:01:11,541 DEBUG:= connection is CLOSED
